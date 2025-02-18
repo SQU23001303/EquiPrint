@@ -1,10 +1,10 @@
 <!-- navbar.php -->
 <div class="nav-bar">
     <!-- Logo Section -->
-    <a href="index.html" class="logo">
+    <a href="index.php" class="logo">
       <img src="Images/EquiPrint_Logo_Light_svg.svg" alt="EquiPrint Logo">
     </a>
-    <h1>EquiPrint</h1>
+    <h1><a href="index.php">EquiPrint</a></h1>
 
     <!-- Navbar Section -->
     <nav class="navbar navbar-expand-lg">
@@ -14,16 +14,16 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="#">PRINTS</a>
+            <a class="nav-link" href="prints.php">PRINTS</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT&nbsp;US</a>
+            <a class="nav-link" href="about-us.php">ABOUT&nbsp;US</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
+            <a class="nav-link" href="contact.php">CONTACT</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
+            <a class="nav-link" href="faq.php">FAQ</a>
           </li>
           <li class="nav-item d-lg-none mt-2">
             <!-- Login button inside collapse for mobile view -->

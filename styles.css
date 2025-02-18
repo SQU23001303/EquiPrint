@@ -73,6 +73,11 @@ h1 {
   font-weight: bold;
 }
 
+h1 a {
+  text-decoration: none; /* Removes the underline */
+  color: black; /* Sets the text color to black */
+}
+
 .Index-H2 {
   text-align: center;
   font-size: 5vw;
@@ -92,9 +97,12 @@ h1 {
   text-align: center;
 }
 
-.Index-Image{
-  width: 60vw;  /* 80% of the viewport's width */
-  justify-content: center;
+.Index-Image {
+  width: 60vw;  /* 60% of the viewport's width */
+  display: block;  /* Ensures proper centering */
+  margin: 0 auto;  /* Centers the image */
+  border-radius: 10px;
+  border: 5px solid #c5bb8e; /* Adds a solid border */
 }
 
 /* Container for the sidebar and content */
@@ -113,7 +121,7 @@ margin: 0;
 width: 80px; /* Adjust the width as needed */
 position: fixed; /* This makes the sidebar fixed */
 top: 20%; /* Keeps it at the top of the page */
-right: -10px; /* Keeps it on the left side */
+right: -10px; /* Keeps it on the right side */
 height: 20%; /* Takes up 20% of the page */
 background-color: #ffffff;
 color: white;
