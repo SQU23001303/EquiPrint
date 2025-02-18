@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>Homepage</title>
+</head>
+<body>
+
+  <?php include('includes/light-header.inc.php'); ?>
+  <?php include('includes/light-sidebar.inc.php'); ?>
+  <br>
+
+  <div>
+    <div class="content">
+      <!-- Main content of the page -->
+
+      <H2 class="Index-H2"> 3D Printing Made </H2>
+      <h1 class="Index">ACCESSIBLE</h1>
+      <p class="Index-P"> Shop our 3D prints without hassle - every aspect of our website has been accessible with a site of features</p>
+      <br>
+      <br>
+      <img class="Index-Image" src="Images/Index.jpg" alt="">
+    </div>
+  </div>
+
+  <div class="container-sections">
+    <div class="section">
+      <hr>
+        <h2>Title 1</h2>
+        <p>Small amount of text here.</p>
+    </div>
+    <div class="section">
+        <hr>
+        <h2>Title 2</h2>
+        <p>Small amount of text here.</p>
+    </div>
+    <div class="section">
+        <hr>
+        <h2>Title 3</h2>
+        <p>Small amount of text here.</p>
+    </div>
+    <div class="section">
+        <hr>
+        <h2>Title 4</h2>
+        <p>Small amount of text here.</p>
+    </div>
+</div>
+  
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

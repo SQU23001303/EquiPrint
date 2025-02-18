@@ -108,6 +108,7 @@ margin: 0;
 }
 
 /* Sidebar styling */
+
 .sidebar {
 width: 80px; /* Adjust the width as needed */
 position: fixed; /* This makes the sidebar fixed */
@@ -144,6 +145,10 @@ display: block;
 }
 
 
+
+
+/* Sections section */
+
 /* Main content area */
 .content {
 margin-left: 20%; /* Creates space on the left side for the fixed sidebar */
@@ -152,7 +157,7 @@ padding: 10px;
 }
 
 /* Set up a responsive container */
-.container-home {
+.container-sections {
   display: flex;
   flex-wrap: wrap; /* Allow items to wrap */
   justify-content: space-between; /* Distribute space evenly */
