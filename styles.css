@@ -13,8 +13,6 @@ html, body {
   background-color: #f0f0f0; /* Optional background color */
 }
 
-
-
 .nav-bar {
   display: flex;
   background-color: #ffffff;
@@ -151,4 +149,50 @@ display: block;
 margin-left: 20%; /* Creates space on the left side for the fixed sidebar */
 margin-right: 20%;
 padding: 10px;
+}
+
+/* Set up a responsive container */
+.container-home {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap */
+  justify-content: space-between; /* Distribute space evenly */
+  gap: 20px; /* Space between sections */
+  padding: 20px;
+}
+
+/* Make each section flexibly adjust */
+.section {
+  padding: 20px;
+  width: calc(25% - 20px); /* Each section takes 25% of the container's width minus gap */
+  text-align: center;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem; /* Title size */
+}
+
+p {
+  font-size: 1rem; /* Text size */
+  color: #555;
+}
+
+/* Make sections stack on small devices (below 768px) */
+@media (max-width: 768px) {
+  .section {
+      width: calc(50% - 20px); /* 50% width on tablets */
+  }
+}
+
+/* Make sections stack on very small devices (below 480px) */
+@media (max-width: 480px) {
+  .section {
+      width: 100%; /* Full width on mobile */
+  }
+}
+
+hr {
+  border: 0;
+  border-top: 5px solid #000000; /* Line at the top */
+  margin: 10px auto;  /* Centers the line and adds spacing */
 }
