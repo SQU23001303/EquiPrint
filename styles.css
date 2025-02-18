@@ -1,3 +1,20 @@
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Make the body and HTML take up full height */
+}
+
+.homepage {
+  height: 100vh; /* Make the homepage div take up full viewport height */
+  width: 100%; /* Make the homepage div take up full width */
+  display: flex; /* Enable flexbox for alignment */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  background-color: #f0f0f0; /* Optional background color */
+}
+
+
+
 .nav-bar {
   display: flex;
   background-color: #ffffff;
@@ -60,21 +77,26 @@ h1 {
 
 .Index-H2 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 5vw;
 }
 
 .Index-P{
   text-align: center;
-  font-size: 1rem;;
+  font-size: 2vw;;
 }
 
 .Index {
   background: linear-gradient(135deg, #FFA500, #FF4500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 5.5rem; /* Adjust size as needed */
+  font-size: 10vw; /* Adjust size as needed */
   font-weight: bold;
   text-align: center;
+}
+
+.Index-Image{
+  width: 60vw;  /* 80% of the viewport's width */
+  justify-content: center;
 }
 
 /* Container for the sidebar and content */
