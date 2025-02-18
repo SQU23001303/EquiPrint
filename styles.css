@@ -1,94 +1,108 @@
-  .nav-bar {
-    display: flex;
-    background-color: #ffffff;
-    margin: 0 25%;
-    border-radius: 10px; /* Curvature of the border corners */
-    padding: 10px 20px; /* Inside the border whitespace */
-    border-color: black;
-    border-style: outset;
-    border-width: 2px;
-    justify-content: space-between;
-    align-items: center;
-    color: black;
-    min-width: fit-content;
-  }
-
-  h1 {
-    padding: 10px;
-    text-align: left;
-  }
-
-  /* List and Links Styling */
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  li a {
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-
-  /* Login Button */
-  .login-btn {
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background: linear-gradient(135deg, #FFA500, #FF4500);
-  }
-
-  .navbar-toggler {
-    margin-left: auto; /* Align the toggler to the right */
-  }
-
-  /* Responsive Navbar Styling */
-  .navbar-collapse {
-    justify-content: flex-end;
-  }
-
-  body {
-    background-color: rgb(245, 245, 228);
-  }
-
-  /* Container for the sidebar and content */
-.container {
+.nav-bar {
   display: flex;
+  background-color: #ffffff;
+  margin: 0 25%;
+  border-radius: 10px; /* Curvature of the border corners */
+  padding: 10px 20px; /* Inside the border whitespace */
+  border-color: black;
+  border-style: outset;
+  border-width: 2px;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  min-width: fit-content;
+}
+
+h1 {
+  padding: 10px;
+  text-align: left;
+}
+
+/* List and Links Styling */
+ul {
+  list-style-type: none;
   margin: 0;
+  padding: 0;
+}
+
+li a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Login Button */
+.login-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #FFA500, #FF4500);
+}
+
+.navbar-toggler {
+  margin-left: auto; /* Align the toggler to the right */
+}
+
+/* Responsive Navbar Styling */
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+body {
+  background-color: rgb(245, 245, 228);
+}
+
+/* Container for the sidebar and content */
+.container {
+display: flex;
+margin: 0;
 }
 
 /* Sidebar styling */
 .sidebar {
-  width: 0px; /* Adjust the width as needed */
-  position: fixed; /* This makes the sidebar fixed */
-  top: 20%; /* Keeps it at the top of the page */
-  right: 0px; /* Keeps it on the left side */
-  height: 20%; /* Takes up 20% of the page */
-  background-color: #ffffff;
-  color: white;
-  border-radius: 10px; /* Curvature of the border corners */
-  border-style: outset;
-  border-top: 2px solid black;  /* Top border */
-  border-left: 2px solid black; /* Left border */
-  border-bottom: 2px solid black; /* Bottom border */
-  padding: 20px;
+width: 80px; /* Adjust the width as needed */
+position: fixed; /* This makes the sidebar fixed */
+top: 20%; /* Keeps it at the top of the page */
+right: -10px; /* Keeps it on the left side */
+height: 20%; /* Takes up 20% of the page */
+background-color: #ffffff;
+color: white;
+border-radius: 10px; /* Curvature of the border corners */
+border-style: outset;
+border-top: 2px solid black;  /* Top border */
+border-left: 2px solid black; /* Left border */
+border-bottom: 2px solid black; /* Bottom border */
+padding: 20px;
+display: flex;
+flex-direction: column; /* Makes the sidebar content stack vertically */
+justify-content: left; /* Aligns the content to the top of the sidebar */
 }
 
+.accessibility-button {
+background: none; /* Removes the default button background */
+border: none; /* Removes the default button border */
+padding: 2px;
+cursor: pointer; /* Changes the cursor to indicate it's clickable */
+text-align: left; /* Ensures content inside button is left-aligned */
+margin-bottom: 5px; /* Adds space between buttons */
+}
 
 .accessibility-button img {
-  width: 30px; /* Adjust the image size */
-  height: auto;
+border: none;
+width: 30px; /* Adjust the image size */
+height: auto;
+display: block;
 }
 
 
 /* Main content area */
 .content {
-  margin-left: 260px; /* Creates space on the left side for the fixed sidebar */
-  padding: 20px;
+margin-left: 20%; /* Creates space on the left side for the fixed sidebar */
+margin-right: 20%;
+padding: 10px;
 }
