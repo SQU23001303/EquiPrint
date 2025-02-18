@@ -9,30 +9,10 @@
     <title>Prints</title>
 </head>
 <body>
-  <?php include('navbar.php'); ?>
-
-  <div class="container">
-    <div class="sidebar">
-      <!-- Sidebar content like links, images, etc. -->
-      <button class="accessibility-button" aria-label="">
-        <img src="Images/W3schools.svg" alt="">
-      </button>
-      <button class="accessibility-button" aria-label="">
-        <img src="Images/Vector.svg" alt="">
-      </button>
-      <button class="accessibility-button" aria-label="">
-        <img src="Vector-1.svg" alt="">
-      </button>
-      <button class="accessibility-button" aria-label="">
-        <img src="Vector-2.svg" alt="">
-      </button>
-      <img src="Vector.svg" alt="">
-      
-    </div>
-    <div class="content">
-      <!-- Main content of the page -->
-    </div>
-  </div>
+  
+  <?php include('includes/light-header.inc.php'); ?>
+  <?php include('includes/light-sidebar.inc.php'); ?>
+  <br>
   
 
   <script src=""></script>

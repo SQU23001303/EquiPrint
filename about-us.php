@@ -9,66 +9,10 @@
     <title>About-Us</title>
 </head>
 <body>
-  <div class="nav-bar">
-    <!-- Logo Section -->
-    <img src="Images/EquiPrint_Logo_Light_svg.svg" alt="EquiPrint Logo">
-    <h1>EquiPrint</h1>
-
-    <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">PRINTS</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">ABOUT&nbsp;US</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">CONTACT</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-          <li class="nav-item d-lg-none mt-2">
-            <!-- Login button inside collapse for mobile view -->
-            <button class="login-btn w-100">Login</button>
-          </li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Login Button Outside for Desktop -->
-    <div class="d-none d-lg-block">
-      <button class="login-btn">Login</button>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="sidebar">
-      <!-- Sidebar content like links, images, etc. -->
-      <button class="accessibility-button" aria-label="">
-        <img src="Images/W3schools.svg" alt="">
-      </button>
-      <button class="accessibility-button" aria-label="">
-        <img src="Images/Vector.svg" alt="">
-      </button>
-      <button class="accessibility-button" aria-label="">
-        <img src="Vector-1.svg" alt="">
-      </button>
-      <button class="accessibility-button" aria-label="">
-        <img src="Vector-2.svg" alt="">
-      </button>
-      <img src="Vector.svg" alt="">
-      
-    </div>
-    <div class="content">
-      <!-- Main content of the page -->
-    </div>
-  </div>
+  
+  <?php include('includes/light-header.inc.php'); ?>
+  <?php include('includes/light-sidebar.inc.php'); ?>
+  <br>
   
 
   <script src=""></script>
