@@ -54,13 +54,17 @@ li a {
 }
 
 body {
-  background-color: rgb(245, 245, 228);
+  background-color: rgb(230, 230, 207);
 }
 
 /* Container for the sidebar and content */
 .container {
 display: flex;
 margin: 0;
+}
+
+.logo{
+  border: none;
 }
 
 /* Sidebar styling */
