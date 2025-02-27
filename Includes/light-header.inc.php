@@ -1,4 +1,5 @@
 <!-- navbar.php -->
+<br>
 <div class="nav-bar">
     <!-- Logo Section -->
     <a href="index.php" class="logo">

@@ -102,20 +102,19 @@ h1 a {
 
 .Index-H2 {
   text-align: center;
-  font-size: 4vw;
-
+  font-size: 3vw;
 }
 
 .Index-P {
   text-align: center;
-  font-size: 2vw;
+  font-size: 1vw;
 }
 
 .Index {
   background: linear-gradient(135deg, #FFA500, #FF4500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 10vw;
+  font-size: 5vw;
   font-weight: bold;
   text-align: center;
 }
@@ -127,6 +126,24 @@ h1 a {
   margin: 0 auto;
   border-radius: 10px;
   border: 5px solid #c5bb8e;
+  max-height: 40vh;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .Index-H2 {
+    font-size: 10vw;
+  }
+  .Index-P {
+    text-align: center;
+    font-size: 3vw;
+  }
+  .Index {
+    font-size: 10vw;
+  }
+  .Index-Image{
+    width: 50vw;
+  }
 }
 
 /* CONTAINER */
@@ -201,6 +218,8 @@ h1 a {
 @media (min-width: 769px) {
   .section {
     width: calc(22% - 20px);
+    margin: 0 10%;
+    justify-content: center;
   }
 }
 
