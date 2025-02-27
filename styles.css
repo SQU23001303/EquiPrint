@@ -38,12 +38,20 @@ html, body {
   }
 }
 
+/* Tablet - Medium Margins */
+@media (min-width: 481px) and (max-width: 768px) {
+  .nav-bar {
+    margin: 0 10%; /* Optional, adjust as needed */
+  }
+}
+
 /* Mobile - Smaller Margins */
-@media (max-width: 768px) {
+@media (max-width: 480px) {
   .nav-bar {
     margin: 0 10%;
   }
 }
+
 
 /* List and Links Styling */
 ul {
@@ -240,4 +248,22 @@ h2 {
   font-size: 1.5rem;
   text-align: center; /* Centers the H2 */
   display: block; /* Ensures it stacks properly */
+}
+
+/* Not let the website break for 350px and less */
+/* Small screens (under 350px) */
+@media (max-width: 350px) {
+  .nav-bar {
+    margin: 0 5%; /* Adjust margins if necessary */
+  }
+
+  /* You may also want to adjust other elements like text sizes, padding, etc. */
+  .section {
+    width: 100%;
+  }
+
+  /* Example for reducing font size or other adjustments */
+  body {
+    font-size: 12px;
+  }
 }
