@@ -21,8 +21,6 @@
       <H2 class="Index-H2"> 3D Printing Made </H2>
       <h1 class="Index">ACCESSIBLE</h1>
       <p class="Index-P"> Shop our 3D prints without hassle - every aspect of our website has been accessible with a site of features</p>
-      <br>
-      <br>
       <img class="Index-Image" src="Images/Index.jpg" alt="">
     </div>
   </div>
@@ -30,7 +28,7 @@
   <div class="container-sections">
     <div class="section">
       <hr>
-        <h2>Title 1</h2>
+        <h2 >Title 1</h2>
         <p>Small amount of text here.</p>
     </div>
     <div class="section">
