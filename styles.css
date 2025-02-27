@@ -1,31 +1,48 @@
+/* General Reset */
 html, body {
-  margin: 0; /* Remove default margin */
-  padding: 0; /* Remove default padding */
-  height: 100%; /* Make the body and HTML take up full height */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  background-color: rgb(233, 233, 210);
 }
 
+/* Homepage Fullscreen */
 .homepage {
-  height: 100vh; /* Make the homepage div take up full viewport height */
-  width: 100%; /* Make the homepage div take up full width */
-  display: flex; /* Enable flexbox for alignment */
-  justify-content: center; /* Center content horizontally */
-  align-items: center; /* Center content vertically */
-  background-color: #f0f0f0; /* Optional background color */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
 }
 
+/* NAVIGATION BAR */
 .nav-bar {
   display: flex;
   background-color: #ffffff;
-  margin: 0 25%;
-  border-radius: 10px; /* Curvature of the border corners */
-  padding: 10px 20px; /* Inside the border whitespace */
-  border-color: black;
-  border-style: outset;
-  border-width: 2px;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px outset black;
   justify-content: space-between;
   align-items: center;
   color: black;
   min-width: fit-content;
+}
+
+/* Desktop - Wider Margins */
+@media (min-width: 769px) {
+  .nav-bar {
+    margin: 0 25%;
+  }
+}
+
+/* Mobile - Smaller Margins */
+@media (max-width: 768px) {
+  .nav-bar {
+    margin: 0 10%;
+  }
 }
 
 /* List and Links Styling */
@@ -54,19 +71,16 @@ li a {
   background: linear-gradient(135deg, #FFA500, #FF4500);
 }
 
+/* Responsive Navbar Styling */
 .navbar-toggler {
-  margin-left: auto; /* Align the toggler to the right */
+  margin-left: auto;
 }
 
-/* Responsive Navbar Styling */
 .navbar-collapse {
   justify-content: flex-end;
 }
 
-body {
-  background-color: rgb(233, 233, 210);
-}
-
+/* HEADINGS & TEXT */
 h1 {
   padding: 10px;
   text-align: left;
@@ -74,138 +88,143 @@ h1 {
 }
 
 h1 a {
-  text-decoration: none; /* Removes the underline */
-  color: black; /* Sets the text color to black */
+  text-decoration: none;
+  color: black;
 }
 
 .Index-H2 {
   text-align: center;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 
-.Index-P{
+.Index-P {
   text-align: center;
-  font-size: 2vw;;
+  font-size: 2vw;
 }
 
 .Index {
   background: linear-gradient(135deg, #FFA500, #FF4500);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 10vw; /* Adjust size as needed */
+  font-size: 10vw;
   font-weight: bold;
   text-align: center;
 }
 
+/* RESPONSIVE IMAGE */
 .Index-Image {
-  width: 60vw;  /* 60% of the viewport's width */
-  display: block;  /* Ensures proper centering */
-  margin: 0 auto;  /* Centers the image */
+  width: 50vw;
+  display: block;
+  margin: 0 auto;
   border-radius: 10px;
-  border: 5px solid #c5bb8e; /* Adds a solid border */
+  border: 5px solid #c5bb8e;
 }
 
-/* Container for the sidebar and content */
+/* CONTAINER */
 .container {
-display: flex;
-margin: 0;
+  display: flex;
+  margin: 0;
 }
 
-.logo{
+/* LOGO */
+.logo {
   border: none;
 }
 
-/* Sidebar styling */
-
+/* SIDEBAR */
 .sidebar {
-width: 80px; /* Adjust the width as needed */
-position: fixed; /* This makes the sidebar fixed */
-top: 20%; /* Keeps it at the top of the page */
-right: -10px; /* Keeps it on the right side */
-height: 20%; /* Takes up 20% of the page */
-background-color: #ffffff;
-color: white;
-border-radius: 10px; /* Curvature of the border corners */
-border-style: outset;
-border-top: 2px solid black;  /* Top border */
-border-left: 2px solid black; /* Left border */
-border-bottom: 2px solid black; /* Bottom border */
-padding: 20px;
-display: flex;
-flex-direction: column; /* Makes the sidebar content stack vertically */
-justify-content: left; /* Aligns the content to the top of the sidebar */
+  position: fixed;
+  top: 20%;
+  right: 0;
+  width: 60px;
+  height: auto;
+  max-height: 80vh;
+  background-color: #ffffff;
+  border-radius: 10px 0 0 10px;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+  overflow-y: auto;
 }
 
-.accessibility-button {
-background: none; /* Removes the default button background */
-border: none; /* Removes the default button border */
-padding: 2px;
-cursor: pointer; /* Changes the cursor to indicate it's clickable */
-text-align: left; /* Ensures content inside button is left-aligned */
-margin-bottom: 5px; /* Adds space between buttons */
+/* Sidebar Adjustments for Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 45px;
+    height: 250px; /* Reduce height */
+    right: -5px;
+  }
 }
 
-.accessibility-button img {
-border: none;
-width: 30px; /* Adjust the image size */
-height: auto;
-display: block;
+/* ACCESSIBILITY BUTTONS */
+.accessibility-sidebar {
+  background: none;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 5px;
 }
 
-
-
-
-/* Sections section */
-
-/* Main content area */
-.content {
-margin-left: 20%; /* Creates space on the left side for the fixed sidebar */
-margin-right: 20%;
-padding: 10px;
+.accessibility-sidebar img {
+  width: 30px;
+  height: auto;
+  display: block;
+  border: none; /* Removed image border */
 }
 
-/* Set up a responsive container */
+/* SECTIONS */
 .container-sections {
   display: flex;
-  flex-wrap: wrap; /* Allow items to wrap */
-  justify-content: space-between; /* Distribute space evenly */
-  gap: 20px; /* Space between sections */
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
   padding: 20px;
 }
 
-/* Make each section flexibly adjust */
-.section {
-  padding: 20px;
-  width: calc(25% - 20px); /* Each section takes 25% of the container's width minus gap */
-  text-align: center;
+/* Desktop Section Width */
+@media (min-width: 769px) {
+  .section {
+    width: calc(22% - 20px);
+  }
 }
 
-h2 {
-  margin-bottom: 10px;
-  font-size: 1.5rem; /* Title size */
-}
-
-p {
-  font-size: 1rem; /* Text size */
-  color: #555;
-}
-
-/* Make sections stack on small devices (below 768px) */
+/* Tablet Section Width */
 @media (max-width: 768px) {
   .section {
-      width: calc(50% - 20px); /* 50% width on tablets */
+    width: calc(50% - 20px);
   }
 }
 
-/* Make sections stack on very small devices (below 480px) */
+/* Mobile Section Width */
 @media (max-width: 480px) {
   .section {
-      width: 100%; /* Full width on mobile */
+    width: 100%;
   }
 }
 
+/* WHITE SPACE ADJUSTMENTS */
+@media (min-width: 769px) {
+  .content {
+    margin: 0 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin: 0 5%;
+  }
+}
+
+/* LINE SEPARATOR */
 hr {
   border: 0;
-  border-top: 5px solid #000000; /* Line at the top */
-  margin: 10px auto;  /* Centers the line and adds spacing */
+  border-top: 5px solid #000000;
+  margin: 10px auto;
 }
