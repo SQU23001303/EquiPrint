@@ -309,15 +309,15 @@ h2 {
 }
 
 .accessibility-box {
-  flex: 1 1 30%; /* Flexible but keeps around 30% width */
+  flex: 1 1 30%;
   text-align: center;
   padding: 15px;
-  min-width: 250px; /* Prevents boxes from becoming too small */
+  min-width: 250px;
 }
 
 /* Icons */
 .accessibility-box i {
-  font-size: 28px;
+  font-size: 1.75rem; /* 28px converted to rem based on a 16px root font size */
   display: block;
   margin-bottom: 10px;
 }
@@ -327,10 +327,16 @@ h2 {
   .accessibility-box {
     flex: 1 1 45%; /* Two items per row on tablets */
   }
+  .accessibility-box i {
+    font-size: 2vw; /* Adjust icon size based on viewport width */
+  }
 }
 
 @media (max-width: 480px) {
   .accessibility-box {
     flex: 1 1 100%; /* Stacks items on small screens */
+  }
+  .accessibility-box i {
+    font-size: 4vw; /* Increase size on smaller screens */
   }
 }
