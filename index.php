@@ -28,21 +28,28 @@
   <!-- CHANGES HERE -->
   <div class="accessibility-container">
     <div class="accessibility-box">
-        <i class="fa-solid fa-universal-access"></i>
+        <img src="path/to/your/icon1.png" alt="Accessibility Lead Icon" class="accessibility-icon">
         <h3>Accessibility Lead</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
     <div class="accessibility-box">
-        <i class="fa-solid fa-file-alt"></i>
+        <img src="path/to/your/icon2.png" alt="File Alt Icon" class="accessibility-icon">
         <h3>Accessibility Lead</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
     <div class="accessibility-box">
-        <i class="fa-solid fa-check-circle"></i>
+        <img src="path/to/your/icon3.png" alt="Check Circle Icon" class="accessibility-icon">
         <h3>Accessibility Lead</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+    <!-- New added box -->
+    <div class="accessibility-box">
+        <img src="path/to/your/icon4.png" alt="New Icon" class="accessibility-icon">
+        <h3>New Header</h3>
+        <p>New paragraph text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 </div>
+
   
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
