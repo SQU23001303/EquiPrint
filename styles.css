@@ -120,7 +120,6 @@ h1 a {
   text-align: center;
   animation: gradientMove 3s infinite alternate;
 }
-
 @keyframes gradientMove {
   0% {
     background-position: left top;
