@@ -296,3 +296,26 @@ h2 {
     font-size: 12px;
   }
 }
+
+/* WILL'S CHANGES */
+.accessibility-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 20px;
+  max-width: 1000px; /* Adjust to fit your layout */
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.accessibility-box {
+  flex: 1;
+  text-align: center;
+  padding: 15px;
+}
+
+.accessibility-box i {
+  font-size: 24px;
+  display: block;
+  margin-bottom: 10px;
+}

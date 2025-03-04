@@ -25,26 +25,22 @@
     </div>
   </div>
 
-  <div class="container-sections">
-    <div class="section">
-      <hr>
-        <h2 >Title 1</h2>
-        <p>Small amount of text here.</p>
+  <!-- CHANGES HERE -->
+  <div class="accessibility-container">
+    <div class="accessibility-box">
+        <i class="fa-solid fa-universal-access"></i>
+        <h3>Accessibility Lead</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
-    <div class="section">
-        <hr>
-        <h2>Title 2</h2>
-        <p>Small amount of text here.</p>
+    <div class="accessibility-box">
+        <i class="fa-solid fa-file-alt"></i>
+        <h3>Accessibility Lead</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
-    <div class="section">
-        <hr>
-        <h2>Title 3</h2>
-        <p>Small amount of text here.</p>
-    </div>
-    <div class="section">
-        <hr>
-        <h2>Title 4</h2>
-        <p>Small amount of text here.</p>
+    <div class="accessibility-box">
+        <i class="fa-solid fa-check-circle"></i>
+        <h3>Accessibility Lead</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
 </div>
   
