@@ -111,12 +111,23 @@ h1 a {
 }
 
 .Index {
-  background: linear-gradient(135deg, #FFA500, #FF4500);
+  background: linear-gradient(135deg, #FF4500, #FFA500);
+  background-size: 200% 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 5vw;
+  font-size: 3vw;
   font-weight: bold;
   text-align: center;
+  animation: gradientMove 3s infinite alternate;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
 }
 
 /* RESPONSIVE IMAGE */
