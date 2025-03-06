@@ -284,9 +284,9 @@ footer {
   flex-wrap: wrap;
   align-items: center;
   border-top: 2px solid #444;
-  max-width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  max-width: 88%;
+  margin-left: 6%;
+  margin-right: 6%;
 }
 
 .footer-left {
@@ -302,12 +302,13 @@ footer {
 
 .footer-links {
   display: flex;
-  gap: 15px;
+  gap: 5px;
 }
 
 .footer-links a {
   color: rgb(0, 0, 0);
   text-decoration: none;
+  flex-direction: column;
   transition: color 0.3s;
 }
 
