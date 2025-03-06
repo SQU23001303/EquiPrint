@@ -191,7 +191,7 @@ h1 a {
   justify-content: flex-start;
   align-items: center;
   z-index: 100;
-  overflow-y: auto;
+  
 }
 
 /* Sidebar Adjustments for Mobile */
