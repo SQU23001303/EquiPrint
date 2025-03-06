@@ -236,7 +236,13 @@ h1 a {
 .section {
   width: calc(25% - 20px); /* Adjust spacing */
   margin: 20px 0; /* Adds vertical spacing */
-  text-align: center;
+}
+
+.accessibility-icon {
+  width: 30px;
+  height: auto;
+  display: block;
+  border: none; /* Removed image border */
 }
 
 /* Tablet & Small Laptops - Two sections per row, more centered */
@@ -310,6 +316,8 @@ h2 {
     font-size: 12px;
   }
 }
+
+
 
 /* WILL'S CHANGES */
 .accessibility-container {

@@ -18,7 +18,7 @@
     <div class="content">
       <!-- Main content of the page -->
 
-      <H2 class="Index-H2"> 3D Printing Made </H2>
+      <h2 class="Index-H2"> 3D Printing Made </h2>
       <h1 class="Index">ACCESSIBLE</h1>
       <p class="Index-P"> Shop our 3D prints without hassle - every aspect of our website <br> has been accessible with a site of features</p>
       <img class="Index-Image" src="Images/Index.jpg" alt="">
@@ -28,16 +28,19 @@
   <div class="container-sections">
     <div class="section">
       <hr>
+      <img src="Images/W3schools.png.svg" alt="Accessibility Lead Icon" class="accessibility-icon">
       <h3>Accessibility Lead</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
     <div class="section">
         <hr>
+        <img src="Images/Vector.svg" alt="Accessibility Lead Icon" class="accessibility-icon">
         <h3>Accessibility Lead</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
     <div class="section">
         <hr>
+        <img src="Images/Vector-1.svg" alt="Accessibility Lead Icon" class="accessibility-icon">
         <h3>Accessibility Lead</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
     </div>
