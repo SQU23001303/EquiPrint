@@ -52,6 +52,20 @@
     </div>
 </div>
 
+<section class="hero">
+  <div class="hero-content">
+    <div class="hero-header">
+      <h1 class="h1-hero">Your Vision, Made Accessible With Us.</h1>
+      <a href="#" class="shop-button">SHOP NOW</a>
+    </div>
+    <p class="p-hero">
+      We believe 3D printing should be accessible to everyone, no matter your background or experience. 
+      With features designed for ease of use, we've made sure that everyone—from beginners to pros—can create with confidence.
+    </p>
+  </div>
+</section>
+
+
   <?php include('includes/light-footer.inc.php'); ?>
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

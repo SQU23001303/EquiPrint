@@ -276,6 +276,95 @@ h1 a {
 
 
 
+/* Hero Section */
+.hero {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers everything */
+  text-align: center; /* Centers text */
+  max-height: 80vh; /* Full height for centering */
+}
+
+/* Content Wrapper */
+.hero-content {
+  max-width: 600px;
+  width: 90%;
+}
+
+/* Header Section (Title + Button) */
+.hero-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centers title & button */
+  gap: 15px; /* Space between title & button */
+  flex-wrap: wrap; /* Ensures responsiveness */
+}
+
+/* Heading */
+.h1-hero {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #000; /* Black text */
+  margin-bottom: 20px;
+  white-space: nowrap; /* Prevents title from breaking */
+}
+
+/* Paragraph */
+.p-hero {
+  font-size: 1rem;
+  color: #000; /* Black text */
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* Button Styling */
+.shop-button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  background: linear-gradient(to right, #ccc, #fff); /* Grey-to-white gradient */
+  border: 2px solid #000;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap; /* Keeps button inline */
+}
+
+.shop-button:hover {
+  background: linear-gradient(to right, #bbb, #eee);
+  border-color: #444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center; /* Ensures text is centered on small screens */
+  }
+
+  .hero-header {
+    flex-direction: column; /* Stacks title & button on mobile */
+    gap: 10px;
+  }
+
+  .h1-hero {
+    font-size: 2rem; /* Adjusts for smaller screens */
+    text-align: center;
+  }
+
+  .p-hero {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
 footer {
   color: rgb(0, 0, 0);
   padding: 20px 40px;
