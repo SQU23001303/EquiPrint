@@ -224,32 +224,46 @@ h1 a {
   padding: 20px;
 }
 
-/* Desktop Section Width */
-@media (min-width: 769px) {
+/* Default layout (Desktop) - Four sections across */
+.container-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  width: calc(25% - 20px); /* Adjust spacing */
+  margin: 20px 0; /* Adds vertical spacing */
+  text-align: center;
+}
+
+/* Tablet & Small Laptops - Two sections per row, more centered */
+@media (max-width: 1024px) {
+  .container-sections {
+      max-width: 80%; /* Increase margin */
+      justify-content: center;
+  }
+
   .section {
-    width: calc(22% - 20px);
-    margin: 0 10%;
-    justify-content: center;
+      width: calc(50% - 30px);
   }
 }
 
-/* Tablet Section Width */
+/* Mobile - One section per row, spanning full width */
 @media (max-width: 768px) {
+  .container-sections {
+      flex-direction: column;
+      align-items: center;
+  }
+
   .section {
-    width: calc(50% - 20px);
-    justify-content: center;
-    margin: 0 auto; /* Center horizontally */
+      width: 80%;
   }
 }
 
-/* Mobile Section Width */
-@media (max-width: 480px) {
-  .section {
-    width: 80%;
-    justify-content: center;
-    margin: 0 auto; /* Center horizontally */
-  }
-}
+
 
 
 /* WHITE SPACE ADJUSTMENTS */
