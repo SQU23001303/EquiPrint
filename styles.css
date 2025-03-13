@@ -285,7 +285,9 @@ h1 a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  justify-items: center;
   max-width: 1000px;
+  margin: auto;
   width: 90%;
   padding: 50px;
 }
@@ -329,6 +331,8 @@ h1 a {
 @media (max-width: 768px) {
   .hero {
       text-align: center;
+      width: 90%;
+      padding: 30px;
   }
   .hero-header {
       flex-direction: column;
@@ -344,7 +348,6 @@ h1 a {
       text-align: center;
   }
 }
-
 
 
 
