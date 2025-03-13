@@ -542,6 +542,43 @@ h2 {
   background: linear-gradient(100deg, #FFA500, #FF4500);
 }
 
+/*About us page */
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 3rem;
+  margin-top: 20px;
+}
+p.subtitle {
+  font-size: 1.2rem;
+  color: #666;
+}
+.team-member {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+  overflow: hidden;
+}
+.image-placeholder {
+  width: 40%;
+  height: 250px;
+  background: #ccc;
+}
+.info {
+  width: 60%;
+  padding: 20px;
+  text-align: left;
+}
+.info h2 {
+  color: #ff6600;
+}
+
+
 
 
 
