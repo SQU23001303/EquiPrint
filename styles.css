@@ -503,10 +503,15 @@ h2 {
   max-width: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-color: #000000;
+  
 }
 .product-image {
   width: 100%;
   height: auto;
+}
+.product-description{
+  min-height: 160px; /* Adjust this value as needed */
+  max-height: 160px;
 }
 .product-info {
   padding: 15px;
