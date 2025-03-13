@@ -55,15 +55,17 @@
 <section class="hero">
   <div class="hero-content">
     <div class="hero-header">
-      <h1 class="h1-hero">Your Vision, Made Accessible With Us.</h1>
+      <h1 class="h1-hero">Your Vision,</h1>
       <a href="#" class="shop-button">SHOP NOW</a>
     </div>
+    <h1 class="h1-hero">Made Accessible With Us.</h1>
     <p class="p-hero">
       We believe 3D printing should be accessible to everyone, no matter your background or experience. 
       With features designed for ease of use, we've made sure that everyone—from beginners to pros—can create with confidence.
     </p>
   </div>
 </section>
+
 
 
   <?php include('includes/light-footer.inc.php'); ?>
