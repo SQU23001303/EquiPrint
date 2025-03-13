@@ -503,7 +503,6 @@ h2 {
   max-width: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-color: #000000;
-  grid-template-rows: auto 1fr auto; /* Header auto, body flexible, footer fixed */
 }
 .product-image {
   width: 100%;
