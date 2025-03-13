@@ -481,6 +481,9 @@ h2 {
   }
 }
 
+
+
+
 /* Print page */
 .product-grid {
   display: flex;
@@ -488,6 +491,8 @@ h2 {
   gap: 50px;
   flex-wrap: wrap;
   padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .product-card {
   background: #ffffff;
@@ -498,6 +503,7 @@ h2 {
   max-width: 250px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-color: #000000;
+  grid-template-rows: auto 1fr auto; /* Header auto, body flexible, footer fixed */
 }
 .product-image {
   width: 100%;
@@ -513,7 +519,6 @@ h2 {
   background: rgb(236, 227, 227);
   padding: 10px;
   border-radius: 10px;
-  margin-top: auto; /* Pushes it to the bottom */
   text-align: center;
 }
 .price {
