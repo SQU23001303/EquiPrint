@@ -14,6 +14,10 @@
   <?php include('includes/light-sidebar.inc.php'); ?>
   <br>
 
+  <section class="print-library">
+    <h1>Print Library</h1>
+    <p>View our library of 3D-Prints below, superb quality and made by a suite of talented individuals.</p>
+  </section>
 
   <section class="product-grid">
     <div class="product-card">

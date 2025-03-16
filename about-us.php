@@ -8,43 +8,44 @@
     <link rel="stylesheet" href="styles.css">
     <title>About-Us</title>
 </head>
+
 <body>
   
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
-  <br>
-
-  <div class="container">
+  <section class="about-section">
         <h1>About Us</h1>
-        <p class="subtitle">Meet the team behind EquiPrint, and why we do what we do</p>
-        
-        <div class="team-member">
-            <div class="image-placeholder"></div>
-            <div class="info">
-                <h2>Steve Scorse</h2>
-                <p><strong>Co-Founder & Creative Director</strong></p>
-                <p>Steve brings the creative spark to the team, ensuring our 3D printing tools are intuitive and welcoming.</p>
+        <p>Meet the dedicated experts and why we do what we do.</p>
+
+        <div class="team-container">
+            <div class="team-card">
+                <img src="Images/Steve.jpg" alt="Steve Scorse">
+                <div class="team-text">
+                    <h2>STEVE SCORSE</h2>
+                    <h3>Co-Founder & Creative Director</h3>
+                    <p>Steve brings the creative spark to the team, ensuring our 3D printing tools are intuitive and user-friendly.</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="Images/Ben.jpg" alt="Ben Squire">
+                <div class="team-text">
+                    <h2>BEN SQUIRE</h2>
+                    <h3>Co-Founder & Developer</h3>
+                    <p>Ben focuses on making sure our platform is intuitive, efficient, and accessible for all users.</p>
+                </div>
+            </div>
+
+            <div class="team-card">
+                <img src="Images/Will.jpg" alt="Will Young">
+                <div class="team-text">
+                    <h2>WILL YOUNG</h2>
+                    <h3>Co-Founder & Developer</h3>
+                    <p>Will ensures our applications run smoothly, providing the best experience possible for our users.</p>
+                </div>
             </div>
         </div>
-        
-        <div class="team-member">
-            <div class="image-placeholder"></div>
-            <div class="info">
-                <h2>Ben Squire</h2>
-                <p><strong>Co-Founder & Developer</strong></p>
-                <p>Ben focuses on making sure our platform is intuitive, efficient, and accessible for all users.</p>
-            </div>
-        </div>
-        
-        <div class="team-member">
-            <div class="image-placeholder"></div>
-            <div class="info">
-                <h2>Will Young</h2>
-                <p><strong>Co-Founder & Developer</strong></p>
-                <p>Will ensures our platform remains stable and accessible, always improving the user experience.</p>
-            </div>
-        </div>
-    </div>
+    </section>
 
 
   <?php include('includes/light-footer.inc.php'); ?>

@@ -485,6 +485,27 @@ h2 {
 
 
 /* Print page */
+.print-library {
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  text-align: center; /* Ensures text is centered */
+  padding: 40px 20px;
+  height: 25vh; /* Optional: Makes it take full viewport height */
+}
+
+.print-library h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.print-library p {
+  font-size: 16px;
+  max-width: 600px; /* Optional: Restricts text width for better readability */
+}
+
 .product-grid {
   display: flex;
   justify-content: center;
@@ -542,42 +563,120 @@ h2 {
   background: linear-gradient(100deg, #FFA500, #FF4500);
 }
 
-/*About us page */
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-h1 {
-  font-size: 3rem;
-  margin-top: 20px;
-}
-p.subtitle {
-  font-size: 1.2rem;
-  color: #666;
-}
-.team-member {
-  display: flex;
-  align-items: center;
-  background: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  margin: 20px 0;
-  overflow: hidden;
-}
-.image-placeholder {
-  width: 40%;
-  height: 250px;
-  background: #ccc;
-}
-.info {
-  width: 60%;
-  padding: 20px;
-  text-align: left;
-}
-.info h2 {
-  color: #ff6600;
+
+
+
+
+/* About Us Page */
+.about-section {
+  padding: 50px 20px;
+  text-align: center;
 }
 
+.about-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.about-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Team Container */
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+/* Team Card */
+.team-card {
+  display: flex;
+  align-items: center;
+  background: #beb4b4;
+  border-radius: 15px;
+  padding: 20px;
+  width: 60%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(224, 194, 194, 0.2);
+  transition: transform 0.3s;
+}
+
+/* Odd cards move left */
+.team-card:nth-child(odd) {
+  align-self: flex-start;
+  margin-left: 5%;
+}
+
+/* Even cards move right */
+.team-card:nth-child(even) {
+  align-self: flex-end;
+  margin-right: 5%;
+  flex-direction: row-reverse;
+}
+
+/* Profile Image */
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.team-card:nth-child(odd) img {
+  margin-right: 15px;
+}
+
+.team-card:nth-child(even) img {
+  margin-left: 15px;
+}
+
+/* Text Section */
+.team-text {
+  text-align: left;
+}
+
+.team-text h2 {
+  font-size: 22px;
+  color: #ff6600;
+  margin: 0;
+}
+
+.team-text h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.team-text p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+  .team-card {
+    width: 90%;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-card:nth-child(even),
+  .team-card:nth-child(odd) {
+    margin: 0;
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .team-card img {
+    margin: 0 0 10px 0;
+  }
+}
 
 
 
