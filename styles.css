@@ -570,13 +570,17 @@ h2 {
 /* About Us Page */
 .about-section {
   padding: 50px 20px;
-  text-align: center;
+  text-align: center; /* Ensures all text inside is centered */
 }
 
 .about-section h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  margin: auto; /* Centers it */
+  display: block; /* Ensures it behaves as a block element */
+  text-align: center; /* Centers text properly */
 }
+
 
 .about-section p {
   font-size: 18px;
