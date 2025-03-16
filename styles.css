@@ -44,7 +44,7 @@ html, body {
 /* Desktop - Wider Margins */
 @media (min-width: 769px) {
   .nav-bar {
-    margin: 0 25%;
+    margin: 0 15% 0 15%;
   }
 }
 
