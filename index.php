@@ -12,7 +12,6 @@
 
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
-  <br>
 
   <div>
     <div class="content">

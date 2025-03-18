@@ -113,6 +113,7 @@ h1 a {
 .Index-H2 {
   text-align: center;
   font-size: 3vw;
+  padding: 0;
 }
 
 .Index-P {
@@ -129,6 +130,7 @@ h1 a {
   font-weight: bold;
   text-align: center;
   animation: gradientMove 3s infinite alternate;
+  padding: 0;
 }
 @keyframes gradientMove {
   0% {
