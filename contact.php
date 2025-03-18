@@ -12,7 +12,26 @@
   
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
-  <br>
+  
+  <div class="container">
+        <h1>Contact</h1>
+        <p>We are here to help! Get in contact with us below either by Email or Discord. We will try to get back to you ASAP!</p>
+        
+        <div class="contact-options">
+            <div class="contact-box">
+                <h2>Email Us</h2>
+                <p>Have any questions or inquiries? We'd love to hear from you! Send us an email and we'll get back to you as soon as possible.</p>
+                <a href="#" class="button email-button">Click Here</a>
+            </div>
+            <div class="contact-box">
+                <h2>Join Our Discord</h2>
+                <p>Be part of the conversation! Connect with us on Discord to chat, get updates, and engage with like-minded people.</p>
+                <a href="#" class="button discord-button">Join Here</a>
+            </div>
+        </div>
+    </div>
+    
+
   
   <?php include('includes/light-footer.inc.php'); ?>
   <script src=""></script>
