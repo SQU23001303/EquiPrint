@@ -605,11 +605,13 @@ h2 {
   background: #beb4b4;
   border-radius: 15px;
   padding: 20px;
-  width: 60%;
+  width: 48%;
   max-width: 600px;
   box-shadow: 0 4px 8px rgba(224, 194, 194, 0.2);
   transition: transform 0.3s;
+  border: 2px solid #4d4747; /* Added border width, style, and color */
 }
+
 
 /* Odd cards move left */
 .team-card:nth-child(odd) {
