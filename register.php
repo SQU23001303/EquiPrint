@@ -50,7 +50,8 @@
 
   <!-- Registration Form -->
   <main class="form-signin w-100 m-auto">
-    <form>
+    <!-- POST method required for the registration php script. -->
+    <form action="register.php" method="POST">
       <img class="mb-4" src="Images/EquiPrint_Logo_Light_svg.svg" alt="Equiprint Logo" width="72" height="57">
       <h1 class="h3 mb-3 fw-normal">Create an account <br> with us!</h1>
 
