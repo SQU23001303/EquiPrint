@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['email'] = $user['email'];
 
             // Redirect to a logged-in page (user profile/dashboard - NEEDS TO BE CONFIGURED).
-            header("Location: userdashoardtest.php"); 
+            header("Location: userdashboardtest.php"); 
             exit();
         } else {
             // Incorrect password.
