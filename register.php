@@ -71,8 +71,7 @@
       </div>
 
       <!-- Added 'register-btn' class for styling -->
-      <button class="btn register-btn w-100 py-2" type="submit">Sign in</button>
-      <p class="mt-5 mb-3 text-body-secondary">&copy; 2017–2024</p>
+      <button class="btn register-btn w-100 py-2" type="submit">Register account</button>
     </form>
   </main>
 
