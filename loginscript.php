@@ -1,5 +1,5 @@
 <?php
-//NEEDS TO BE TESTED
+//LOGIN SCRIPT NOW FUNCTIONING CORRECTLY. LANDING PAGE STILL NEEDS CONFIGURING.
 session_start(); // Start a session to store user data once logged in.
 
 // Connect to MySQL database
