@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // JavaScript alert and redirects user to homepage.
         echo "<script>
                 alert('Registration successful! Welcome to Equiprint.');
-                window.location.href='index.php';
+                window.location.href='login.php';
               </script>";
         exit();
     } else {
