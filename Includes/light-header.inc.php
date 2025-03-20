@@ -53,6 +53,9 @@
     <!-- Register and Login Buttons for Desktop -->
     <div class="d-none d-lg-block">
       <a href="register.php" class="auth-btn register-btn">Register</a>
+    </div>
+    
+    <div class="d-none d-lg-block">
       <a href="login.php" class="auth-btn login-btn">Login</a>
     </div>
 </div>
