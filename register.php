@@ -66,7 +66,6 @@
 
     <button class="btn register-btn w-100 py-2" type="submit" name="register">Register account</button>
 </form>
-
   </main>
 
   <?php include('includes/light-footer.inc.php'); ?>

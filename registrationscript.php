@@ -1,11 +1,26 @@
 <?php
+// Include the database configuration file
 include('config.php');
 
-if (isset($_POST["register"])) {
-    $email = $_POST["email"];
-    $password = password_hash($_POST["password"], PASSWORD_BCRYPT); // Hash password
+if ($_SERVER["REQUEST_METHOD"] === "POST") { // Check if form is submitted
+    // Check if email and password are set
+    if (!isset($_POST["email"]) || !isset($_POST["password"])) {
+        die("Error: Missing form fields.");
+    }
 
-    // Check if email exists in database.
+    // Sanitise and fetch user input
+    $email = filter_var($_POST["email"], FILTER_SANITIZE_EMAIL);
+    $password = $_POST["password"]; // Will be hashed before storing
+
+    // Check if email is valid
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        die("Error: Invalid email format.");
+    }
+
+    // Hash password
+    $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+
+    // Check if email already exists
     $checkQuery = "SELECT * FROM users WHERE email = ?";
     $stmt = $conn->prepare($checkQuery);
     $stmt->bind_param("s", $email);
@@ -15,10 +30,11 @@ if (isset($_POST["register"])) {
     if ($result->num_rows > 0) {
         echo "Email already exists. Try logging in.";
     } else {
-        // Insert user entry in database.
+        // Insert new user into the database
         $query = "INSERT INTO users (email, password) VALUES (?, ?)";
         $stmt = $conn->prepare($query);
-        $stmt->bind_param("ss", $email, $password);
+        $stmt->bind_param("ss", $email, $hashedPassword);
+
         if ($stmt->execute()) {
             echo "Registration successful. <a href='login.php'>Login here</a>";
         } else {
@@ -26,8 +42,8 @@ if (isset($_POST["register"])) {
         }
     }
 
+    // Close statement and database connection
     $stmt->close();
+    $conn->close();
 }
-
-$conn->close();
 ?>
