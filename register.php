@@ -25,16 +25,6 @@
       </button>
       <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bd-theme-text">
         <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#sun-fill"></use></svg>
-            Light
-            <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
-          </button>
-        </li>
-        <li>
-          <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
-            <svg class="bi me-2 opacity-50" width="1em" height="1em"><use href="#moon-stars-fill"></use></svg>
-            Dark
             <svg class="bi ms-auto d-none" width="1em" height="1em"><use href="#check2"></use></svg>
           </button>
         </li>
@@ -46,27 +36,31 @@
           </button>
         </li>
       </ul>
-  </div>
-
-  <!-- Registration Form -->
-  <main class="form-signin w-100 m-auto">
-    <!-- POST method required for the registration php script. -->
-    <form action="register.php" method="POST">
-    <img class="mb-4" src="Images/EquiPrint_Logo_Light_svg.svg" alt="Equiprint Logo" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Create an account <br> with us!</h1>
-
+    </div>
+   
+    <main class="form-signin w-100 m-auto">
+    <!-- Added POST method to send data to registrationscript.php script -->
+  <form action="registrationscript.php" method="POST">
+    <img class="mb-4" src="Images/EquiPrint_Logo_Light_svg.svg" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">Create an account <br> with us! </h1>
+    <!-- Name attributes added for each field so that data is sent to PHP script when form is submitted -->
     <div class="form-floating">
-        <input type="email" class="form-control" id="floatingInput" name="email" required placeholder="name@example.com">
-        <label for="floatingInput">Email address</label>
+      <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+      <label for="floatingInput">Email address</label>
     </div>
     <div class="form-floating">
-        <input type="password" class="form-control" id="floatingPassword" name="password" required placeholder="Password">
-        <label for="floatingPassword">Password</label>
+      <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+      <label for="floatingPassword">Password</label>
     </div>
-
-    <button class="btn register-btn w-100 py-2" type="submit" name="register">Register account</button>
-</form>
-  </main>
+    <div class="form-check text-start my-3">
+      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+      <label class="form-check-label" for="flexCheckDefault">
+        Remember me
+      </label>
+    </div>
+    <button class="btn btn-primary w-100 py-2" type="submit">Sign Up</button>
+  </form>
+</main>
 
   <?php include('includes/light-footer.inc.php'); ?>
   <script src="script.js"></script>
