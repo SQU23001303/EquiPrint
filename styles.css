@@ -88,6 +88,17 @@ li a {
   cursor: pointer;
   background: linear-gradient(135deg, #FFA500, #FF4500);
 }
+/* Register Button */
+.register-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #FFA500, #FF4500);
+}
 
 /* Responsive Navbar Styling */
 .navbar-toggler {
