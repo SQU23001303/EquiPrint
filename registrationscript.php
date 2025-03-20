@@ -1,5 +1,5 @@
 <?php
-//NEEDS TESTING!!!
+//Tested and functions correctly - Users can now register an account, which is added to the database.
 // Connect to MySQL using MySQLi extension (Database created using XAMPP and phpMyAdmin - See README.md for details on database configuration).
 $mysqli = new mysqli("localhost", "root", "", "equiprint_db");
 
