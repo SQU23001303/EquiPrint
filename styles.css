@@ -855,20 +855,13 @@ h2 {
 }
 
 /* Registration form */
-html,
-body {
-  height: 100%;
-}
-
 .form-signin {
   max-width: 330px;
   padding: 1rem;
 }
-
 .form-signin .form-floating:focus-within {
   z-index: 2;
 }
-
 .form-signin input[type="email"] {
   margin-bottom: -1px;
   border-bottom-right-radius: 0;
@@ -879,4 +872,22 @@ body {
   margin-bottom: 10px;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
+}
+/* Custom Styling for Registration Form Button */
+.register-btn {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white; /* Text color */
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.register-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
