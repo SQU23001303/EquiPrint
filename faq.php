@@ -12,7 +12,13 @@
   
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
-  <br>
+  
+  <div class="contact-container">
+        <h1 class="contact-h1">FAQ</h1>
+        <p class="contact-headerp">Got questions? We've got answers! Check out our FAQ below or reach out to us via Email or Discord.</p>
+        
+  </div>
+
   
   <?php include('includes/light-footer.inc.php'); ?>
   <script src=""></script>
