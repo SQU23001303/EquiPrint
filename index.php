@@ -55,7 +55,7 @@
   <div class="hero-content">
     <div class="hero-header">
       <h1 class="h1-hero">Your Vision,</h1>
-      <a href="#" class="shop-button">SHOP NOW</a>
+      <a href="prints.php" class="shop-button">SHOP NOW</a>
     </div>
     <h1 class="h1-hero">Made Accessible With Us.</h1>
     <p class="p-hero">
