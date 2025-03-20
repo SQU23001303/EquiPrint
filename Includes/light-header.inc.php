@@ -34,10 +34,10 @@
 
           <!-- Register and Login Buttons for Mobile -->
           <li class="nav-item d-lg-none mt-2">
-            <button class="auth-btn register-btn w-100">Register</button>
+            <a href="register.php" class="auth-btn register-btn w-100">Register</a>
           </li>
           <li class="nav-item d-lg-none mt-2">
-            <button class="auth-btn login-btn w-100">Login</button>
+            <a href="login.php" class="auth-btn login-btn w-100">Login</a>
           </li>
         </ul>
       </div>
@@ -52,8 +52,8 @@
 
     <!-- Register and Login Buttons for Desktop -->
     <div class="d-none d-lg-block">
-      <button class="auth-btn register-btn">Register</button>
-      <button class="auth-btn login-btn">Login</button>
+      <a href="register.php" class="auth-btn register-btn">Register</a>
+      <a href="login.php" class="auth-btn login-btn">Login</a>
     </div>
 </div>
 <br>
