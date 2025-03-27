@@ -20,13 +20,21 @@
 
   <div class="dropdown-container" id="dropdownContainer">
         <button class="dropdown-button" onclick="toggleDropdown()">
-            Join our Discord <span class="icon" id="icon">+</span>
+            <p>What is EquiPrint?</p> <span class="icon" id="icon">+</span>
         </button>
         <div class="dropdown-content" id="dropdownContent">
-            <p>Click the link to join: <a href="https://discord.com/invite/example" target="_blank">Join Now</a></p>
+            <p>EquiPrint is a 3D Printing based online e-commerce store, with a primary focus on accessibility. It was started in 2024 by three co-founders; Steve Scorse, Ben Squire and William Young. The Aim of EquiPrint is to provide users with impairments and disabilities of all kinds to be able to gain access to the wonderful world of additive manufacturing. This site features a suite of accessibility features to help users browse. Here you can shop with us and find out more.</p>
         </div>
   </div>
 
+  <div class="dropdown-container" id="dropdownContainer">
+        <button class="dropdown-button" onclick="toggleDropdown()">
+            <p>How do I navigate your site if I have a disability?</p><span class="icon" id="icon">+</span>
+        </button>
+        <div class="dropdown-content" id="dropdownContent">
+            <p>The site is easily navigable through our accessibility features. These include a sidebar that provides users with instant results when an accessibility button is clicked. This is beneficial as it eliminates the need for users to search through website settings to find the accessibility tools that best suit their needs. In addition to the sidebar, our website incorporates accessibility-friendly colors, fonts, and features to ensure readability for all customers.</p>
+        </div>
+  </div>
   
   <?php include('includes/light-footer.inc.php'); ?>
   <script src="scripts.js"></script>

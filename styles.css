@@ -806,22 +806,26 @@ h2 {
   color: #777;
 }
 
+
+
+
 /* FAQ Page */
 .dropdown-container {
-  width: 220px;
+  width: 80%;
   margin: 20px;
   border: 2px solid #000000; /* Single border around everything */
   border-radius: 5px;
   overflow: hidden; /* Ensures smooth expansion */
   transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
-  max-height: 50px; /* Enough for the button */
+  max-height: 50px;
   padding: 10px;
   background-color: #f0e3af;
+  margin: 20px auto;
 }
 
 .dropdown-button {
   width: 100%;
-  padding: 10px;
+  padding: auto;
   background-color: #f0e3af;
   color: rgb(0, 0, 0);
   border: none;
@@ -830,7 +834,9 @@ h2 {
   border-radius: 5px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  justify-items: center;
+  align-content: center;
+  font-weight: bold;
 }
 
 .dropdown-content {
