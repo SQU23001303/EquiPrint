@@ -1,7 +1,7 @@
-function toggleDropdown() {
-    var container = document.getElementById("dropdownContainer");
-    var content = document.getElementById("dropdownContent");
-    var icon = document.getElementById("icon");
+function toggleDropdown(button) {
+    var container = button.parentElement; // Get the clicked dropdown container
+    var content = container.querySelector(".dropdown-content");
+    var icon = button.querySelector(".icon");
 
     if (container.classList.contains("open")) {
         container.classList.remove("open");

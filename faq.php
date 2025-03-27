@@ -18,8 +18,8 @@
         <p class="contact-headerp">Got questions? We've got answers! Check out our FAQ below or reach out to us via Email or Discord.</p>   
   </div>
 
-  <div class="dropdown-container" id="dropdownContainer">
-        <button class="dropdown-button" onclick="toggleDropdown()">
+  <div class="dropdown-container" id="dropdownContainer(this)">
+        <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>What is EquiPrint?</p> <span class="icon" id="icon">+</span>
         </button>
         <div class="dropdown-content" id="dropdownContent">
@@ -27,8 +27,8 @@
         </div>
   </div>
 
-  <div class="dropdown-container" id="dropdownContainer">
-        <button class="dropdown-button" onclick="toggleDropdown()">
+  <div class="dropdown-container" id="dropdownContainer(this)">
+        <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>How do I navigate your site if I have a disability?</p><span class="icon" id="icon">+</span>
         </button>
         <div class="dropdown-content" id="dropdownContent">

@@ -851,12 +851,13 @@ h2 {
 }
 
 .dropdown-container.open {
-  max-height: 200px; /* Adjust based on content */
+  max-height: none;
 }
 
 .dropdown-container.open .dropdown-content {
   opacity: 1;
   max-height: 150px; /* Prevents clipping */
+  padding: 10px;
 }
 
 .icon {
