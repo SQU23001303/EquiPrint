@@ -14,19 +14,25 @@ function toggleDropdown(button) {
 
 document.addEventListener("DOMContentLoaded", function () {
     const darkModeToggle = document.getElementById("darkModeToggle");
-    const themeStylesheet = document.getElementById("themeStylesheet");
+    const lightThemeStylesheet = document.getElementById("lightThemeStylesheet");
+    const darkThemeStylesheet = document.getElementById("darkThemeStylesheet");
 
     // Check if the user has a saved preference in localStorage
     if (localStorage.getItem("theme") === "dark") {
-        themeStylesheet.href = "dark-mode.css";
+        darkThemeStylesheet.disabled = false;
+        lightThemeStylesheet.disabled = true;
     }
 
     darkModeToggle.addEventListener("click", function () {
-        if (themeStylesheet.getAttribute("href") === "light-mode.css") {
-            themeStylesheet.href = "dark-mode.css";
+        if (darkThemeStylesheet.disabled) {
+            // Enable dark theme and disable light theme
+            darkThemeStylesheet.disabled = false;
+            lightThemeStylesheet.disabled = true;
             localStorage.setItem("theme", "dark");
         } else {
-            themeStylesheet.href = "light-mode.css";
+            // Enable light theme and disable dark theme
+            darkThemeStylesheet.disabled = true;
+            lightThemeStylesheet.disabled = false;
             localStorage.setItem("theme", "light");
         }
     });
