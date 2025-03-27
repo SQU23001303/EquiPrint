@@ -8,7 +8,7 @@
       <button class="accessibility-sidebar" aria-label="">
         <img src="Images/Vector.svg" alt="Accessibility Lead Icon">
       </button>
-      <button class="accessibility-sidebar" aria-label="">
+      <button id="darkModeToggle" class="accessibility-sidebar" aria-label="Dark Mode">
         <img src="Images/Vector-1.svg" alt="Accessibility Lead Icon">
       </button>
       <button class="accessibility-sidebar" aria-label="">

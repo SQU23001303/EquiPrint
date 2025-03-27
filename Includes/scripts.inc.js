@@ -16,21 +16,18 @@ document.addEventListener("DOMContentLoaded", function () {
     const darkModeToggle = document.getElementById("darkModeToggle");
     const themeStylesheet = document.getElementById("themeStylesheet");
 
-    // Check if the user has a saved preference
+    // Check if the user has a saved preference in localStorage
     if (localStorage.getItem("theme") === "dark") {
         themeStylesheet.href = "dark-mode.css";
-        darkModeToggle.textContent = "☀️ Light Mode";
     }
 
     darkModeToggle.addEventListener("click", function () {
         if (themeStylesheet.getAttribute("href") === "light-mode.css") {
             themeStylesheet.href = "dark-mode.css";
             localStorage.setItem("theme", "dark");
-            darkModeToggle.textContent = "☀️ Light Mode";
         } else {
             themeStylesheet.href = "light-mode.css";
             localStorage.setItem("theme", "light");
-            darkModeToggle.textContent = "🌙 Dark Mode";
         }
     });
 });
