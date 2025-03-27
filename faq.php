@@ -18,8 +18,10 @@
         <p class="contact-headerp">Got questions? We've got answers! Check out our FAQ below or reach out to us via Email or Discord.</p>   
   </div>
 
-  <div class="dropdown">
-        <button class="dropdown-button" onclick="toggleDropdown()">Join our Discord</button>
+  <div class="dropdown-container" id="dropdownContainer">
+        <button class="dropdown-button" onclick="toggleDropdown()">
+            Join our Discord <span class="icon" id="icon">+</span>
+        </button>
         <div class="dropdown-content" id="dropdownContent">
             <p>Click the link to join: <a href="https://discord.com/invite/example" target="_blank">Join Now</a></p>
         </div>

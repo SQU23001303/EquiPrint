@@ -1,12 +1,13 @@
 function toggleDropdown() {
+    var container = document.getElementById("dropdownContainer");
     var content = document.getElementById("dropdownContent");
     var icon = document.getElementById("icon");
 
-    if (content.style.display === "block") {
-        content.style.display = "none";
-        icon.textContent = "+";  // Change back to plus
+    if (container.classList.contains("open")) {
+        container.classList.remove("open");
+        icon.textContent = "+";
     } else {
-        content.style.display = "block";
-        icon.textContent = "✖";  // Change to X
+        container.classList.add("open");
+        icon.textContent = "✖";
     }
 }
