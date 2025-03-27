@@ -9,48 +9,43 @@
     <h1><a href="index.php">EquiPrint</a></h1>
 
     <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="prints.php">PRINTS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about-us.php">ABOUT&nbsp;US</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.php">CONTACT</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="faq.php">FAQ</a>
-                </li>
-                <li class="nav-item d-lg-none mt-2">
-                    <button class="navbar-img" aria-label="">
-                        <img src="Images/Cart Icon.svg" alt="Shopping Basket">
-                    </button>
-                </li>
+<nav class="navbar navbar-expand-lg">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-                <!-- Authentication Buttons for Mobile -->
-                <?php if (isset($_SESSION['user_id'])): ?>
-                    <!-- Show Logout button when user is logged in -->
-                    <li class="nav-item d-lg-none mt-2">
-                        <a href="logout.php" class="auth-btn logout-btn w-100">Logout</a>
-                    </li>
-                <?php else: ?>
-                    <!-- Show Register and Login buttons when user is not logged in -->
-                    <li class="nav-item d-lg-none mt-2">
-                        <a href="register.php" class="auth-btn register-btn w-100">Register</a>
-                    </li>
-                    <li class="nav-item d-lg-none mt-2">
-                        <a href="login.php" class="auth-btn login-btn w-100">Login</a>
-                    </li>
-                <?php endif; ?>
-            </ul>
-        </div>
-    </nav>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav text-center">
+            <li class="nav-item"><a class="nav-link" href="prints.php">PRINTS</a></li>
+            <li class="nav-item"><a class="nav-link" href="about-us.php">ABOUT US</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.php">CONTACT</a></li>
+            <li class="nav-item"><a class="nav-link" href="faq.php">FAQ</a></li>
+            <li class="nav-item d-lg-none mt-2">
+                <button class="navbar-img">
+                    <img src="Images/Cart Icon.svg" alt="Shopping Basket">
+                </button>
+                <br>
+            </li>
+
+            <!-- Authentication Buttons for Mobile -->
+            <?php if (isset($_SESSION['user_id'])): ?>
+                <li class="nav-item d-lg-none mt-2">
+                    <a href="logout.php" class="auth-btn logout-btn w-100">Logout</a>
+                </li>
+                <br>
+            <?php else: ?>
+                <li class="nav-item d-lg-none mt-2">
+                    <a href="register.php" class="auth-btn register-btn w-100">Register</a>
+                </li>
+                <br>
+                <li class="nav-item d-lg-none mt-2">
+                    <a href="login.php" class="auth-btn login-btn w-100">Login</a>
+                </li>
+            <?php endif; ?>
+        </ul>
+    </div>
+</nav>
+
 
     <!-- Cart Icon for Desktop -->
     <div class="d-none d-lg-block">
