@@ -35,6 +35,33 @@
             <p>The site is easily navigable through our accessibility features. These include a sidebar that provides users with instant results when an accessibility button is clicked. This is beneficial as it eliminates the need for users to search through website settings to find the accessibility tools that best suit their needs. In addition to the sidebar, our website incorporates accessibility-friendly colors, fonts, and features to ensure readability for all customers.</p>
         </div>
   </div>
+
+  <div class="dropdown-container" id="dropdownContainer(this)">
+        <button class="dropdown-button" onclick="toggleDropdown(this)()">
+            <p>Are your products accessible for people with disabilities?</p><span class="icon" id="icon">+</span>
+        </button>
+        <div class="dropdown-content" id="dropdownContent">
+            <p>Yes we have designed products which are friendly for all users.</p>
+        </div>
+  </div>
+
+  <div class="dropdown-container" id="dropdownContainer(this)">
+        <button class="dropdown-button" onclick="toggleDropdown(this)()">
+            <p>How do I contact you if I need further assistance?</p><span class="icon" id="icon">+</span>
+        </button>
+        <div class="dropdown-content" id="dropdownContent">
+            <p>There are plenty of communication optiosn to be able to communicate with us. Our first communication service is email where we have expert customer advisors which are dedicated on providing the best support possible for all our customers. Our second method is by joining the <a href="https://discord.com/invite/yourserver" target="_blank">discord page</a> which we will provide our latest updates and sneak preview of future ideas.</p>
+        </div>
+  </div>
+
+  <div class="dropdown-container" id="dropdownContainer(this)">
+        <button class="dropdown-button" onclick="toggleDropdown(this)()">
+            <p>Can I access your site from mobile devices?</p><span class="icon" id="icon">+</span>
+        </button>
+        <div class="dropdown-content" id="dropdownContent">
+            <p>Our team has designed a mobile first website providing support to all devices no matter the screen size. This allows all our customers have full access to our site and our products.</p>
+        </div>
+  </div>
   
   <?php include('includes/light-footer.inc.php'); ?>
   <script src="scripts.js"></script>
