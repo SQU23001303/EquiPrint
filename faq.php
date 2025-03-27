@@ -15,13 +15,19 @@
   
   <div class="contact-container">
         <h1 class="contact-h1">FAQ</h1>
-        <p class="contact-headerp">Got questions? We've got answers! Check out our FAQ below or reach out to us via Email or Discord.</p>
-        
+        <p class="contact-headerp">Got questions? We've got answers! Check out our FAQ below or reach out to us via Email or Discord.</p>   
+  </div>
+
+  <div class="dropdown">
+        <button class="dropdown-button" onclick="toggleDropdown()">Join our Discord</button>
+        <div class="dropdown-content" id="dropdownContent">
+            <p>Click the link to join: <a href="https://discord.com/invite/example" target="_blank">Join Now</a></p>
+        </div>
   </div>
 
   
   <?php include('includes/light-footer.inc.php'); ?>
-  <script src=""></script>
+  <script src="scripts.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

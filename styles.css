@@ -806,6 +806,33 @@ h2 {
   color: #777;
 }
 
+/* FAQ Page */
+.dropdown {
+  width: 200px;
+  margin: 20px auto 20px auto;
+  align-items: c;
+}
+        
+.dropdown-button {
+width: 100%;
+padding: 10px;
+background-color: #007BFF;
+color: white;
+border: none;
+cursor: pointer;
+font-size: 16px;
+border-radius: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  margin-top: 5px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 
 
 
