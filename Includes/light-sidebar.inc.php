@@ -2,9 +2,11 @@
 <div class="container">
     <div class="sidebar">
       <!-- Sidebar content like links, images, etc. -->
-      <button class="accessibility-sidebar" aria-label="">
-        <img src="Images/W3schools.png.svg" alt="Accessibility Lead Icon">
-      </button>
+      <a href="https://www.w3.org/WAI/standards-guidelines/" target="_blank">
+        <button class="accessibility-sidebar" aria-label="Open Accessibility Guidelines">
+          <img src="Images/W3schools.png.svg" alt="Accessibility Guidelines">
+        </button>
+      </a>
       <button class="accessibility-sidebar" aria-label="">
         <img src="Images/Vector.svg" alt="Accessibility Lead Icon">
       </button>

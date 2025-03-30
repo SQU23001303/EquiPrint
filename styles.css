@@ -1,0 +1,911 @@
+/* General Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  background: linear-gradient(to right, 
+        rgb(233, 233, 210) 20%,  /* Start with cream */
+        white 40%,               /* Quickly transition to white */
+        white 60%,               /* Keep a small white center */
+        rgb(233, 233, 210) 80%   /* Quickly transition back to cream */
+    );
+}
+
+/* Homepage Fullscreen */
+.homepage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+/* NAVIGATION BAR */
+.nav-bar {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 10px 20px;
+  border: 2px outset black;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  min-width: fit-content;
+}
+
+.navbar-img {
+  border: none;
+  margin-left: 45px;
+}
+
+/* Desktop - Wider Margins */
+@media (min-width: 1250px) {
+  .nav-bar {
+    margin: 0 15% 0 15%;
+  }
+}
+
+/* Tablet - Medium Margins */
+@media (min-width: 481px) and (max-width: 1250px) {
+  .nav-bar {
+    margin: 0 5%; /* Optional, adjust as needed */
+  }
+}
+
+/* Mobile - Smaller Margins */
+@media (max-width: 480px) {
+  .nav-bar {
+    margin: 0 10%;
+  }
+}
+
+
+/* List and Links Styling */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Login Button */
+.login-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #FFA500, #FF4500);
+}
+/* Register Button */
+.register-btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #FFA500, #FF4500);
+}
+
+/* Responsive Navbar Styling */
+.navbar-toggler {
+  margin-left: auto;
+}
+
+.navbar-collapse {
+  justify-content: flex-end;
+}
+
+/* HEADINGS & TEXT */
+h1 {
+  padding: 10px;
+  text-align: left;
+  font-weight: bold;
+}
+
+h1 a {
+  text-decoration: none;
+  color: black;
+}
+
+.Index-H2 {
+  text-align: center;
+  font-size: 3vw;
+  padding: 0;
+}
+
+.Index-P {
+  text-align: center;
+  font-size: 1vw;
+}
+
+.Index {
+  background: linear-gradient(135deg, #FF4500, #FFA500);
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 3vw;
+  font-weight: bold;
+  text-align: center;
+  animation: gradientMove 3s infinite alternate;
+  padding: 0;
+}
+@keyframes gradientMove {
+  0% {
+    background-position: left top;
+  }
+  100% {
+    background-position: right bottom;
+  }
+}
+
+/* RESPONSIVE IMAGE */
+.Index-Image {
+  width: 50vw;
+  display: block;
+  margin: 0 auto;
+  border-radius: 10px;
+  border: 5px solid #c5bb8e;
+  max-height: 40vh;
+}
+
+/* For mobile devices */
+@media (max-width: 768px) {
+  .Index-H2 {
+    font-size: 10vw;
+  }
+  .Index-P {
+    text-align: center;
+    font-size: 3vw;
+  }
+  .Index {
+    font-size: 10vw;
+  }
+  .Index-Image{
+    width: 50vw;
+  }
+}
+
+/* CONTAINER */
+.container {
+  display: flex;
+  margin: 0;
+}
+
+/* LOGO */
+.logo {
+  border: none;
+}
+
+/* SIDEBAR */
+.sidebar {
+  position: fixed;
+  top: 20%;
+  right: 0;
+  width: 60px;
+  height: auto;
+  max-height: 80vh;
+  background-color: #ffffff;
+  border-radius: 10px 0 0 10px;
+  border-left: 2px solid black;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+  
+}
+
+/* Sidebar Adjustments for Mobile */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 40px;
+    right: -5px;
+  }
+}
+
+/* ACCESSIBILITY BUTTONS */
+.accessibility-sidebar {
+  background: none;
+  border: none;
+  padding: 2px;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.accessibility-sidebar img {
+  width: 30px;
+  height: auto;
+  display: block;
+  border: none; /* Removed image border */
+}
+
+/* SECTIONS */
+.container-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Default layout (Desktop) - Four sections across */
+.container-sections {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.section {
+  width: calc(25% - 20px); /* Adjust spacing */
+  margin: 20px 0; /* Adds vertical spacing */
+}
+
+.accessibility-icon {
+  width: 30px;
+  height: auto;
+  display: block;
+  border: none; /* Removed image border */
+}
+
+/* Tablet & Small Laptops - Two sections per row, more centered */
+@media (max-width: 1024px) {
+  .container-sections {
+      max-width: 80%; /* Increase margin */
+      justify-content: center;
+  }
+
+  .section {
+      width: calc(50% - 30px);
+  }
+}
+
+/* Mobile - One section per row, spanning full width */
+@media (max-width: 768px) {
+  .container-sections {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .section {
+      width: 80%;
+  }
+}
+
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  max-width: 1000px;
+  margin: auto;
+  width: 90%;
+  padding: 50px;
+}
+.hero-content {
+  width: 100%;
+  text-align: left;
+}
+.hero-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.h1-hero {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.p-hero {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  max-width: 100%;
+}
+.shop-button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+  background: linear-gradient(to right, #ccc, #fff);
+  border: 2px solid #000;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+  white-space: nowrap;
+}
+.shop-button:hover {
+  background: linear-gradient(to right, #bbb, #eee);
+  border-color: #444;
+}
+@media (max-width: 768px) {
+  .hero {
+      text-align: center;
+      width: 90%;
+      padding: 30px;
+  }
+  .hero-header {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+  .h1-hero {
+      font-size: 2.5rem;
+      text-align: center;
+  }
+  .p-hero {
+      font-size: 1.25rem;
+      text-align: center;
+  }
+}
+
+
+
+
+
+
+footer {
+  color: rgb(0, 0, 0);
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  border-top: 2px solid #444;
+  max-width: 88%;
+  margin-left: 6%;
+  margin-right: 6%;
+}
+
+.footer-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-left img {
+  width: 40px;
+  height: auto;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: 100px;
+}
+
+.footer-links a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.footer-right a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.footer-right a:hover {
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  footer {
+      flex-direction: column;
+      text-align: center;
+      gap: 15px;
+  }
+
+  .footer-left, .footer-links, .footer-right {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-links {
+    margin: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+/* WHITE SPACE ADJUSTMENTS */
+@media (min-width: 769px) {
+  .content {
+    margin: 0 15%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content {
+    margin: 0 15%;
+  }
+}
+
+/* LINE SEPARATOR */
+hr {
+  border: 0;
+  border-top: 5px solid #000000;
+  margin: 10px auto;
+}
+
+h2 {
+  margin: 10px auto 20px auto; /* Adds spacing below the line */
+  font-size: 1.5rem;
+  text-align: center; /* Centers the H2 */
+  display: block; /* Ensures it stacks properly */
+}
+
+/* Not let the website break for 350px and less */
+/* Small screens (under 350px) */
+@media (max-width: 350px) {
+  .nav-bar {
+    margin: 0 5%; /* Adjust margins if necessary */
+  }
+
+  /* You may also want to adjust other elements like text sizes, padding, etc. */
+  .section {
+    width: 100%;
+  }
+
+  /* Example for reducing font size or other adjustments */
+  body {
+    font-size: 12px;
+  }
+}
+
+
+
+
+/* Print page */
+.print-library {
+  display: flex; /* Enables Flexbox */
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center; /* Centers items horizontally */
+  justify-content: center; /* Centers items vertically */
+  text-align: center; /* Ensures text is centered */
+  padding: 40px 20px;
+  height: 25vh; /* Optional: Makes it take full viewport height */
+}
+
+.print-library h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.print-library p {
+  font-size: 16px;
+  max-width: 600px; /* Optional: Restricts text width for better readability */
+}
+
+.product-grid {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.product-card {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  max-width: 250px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-color: #000000;
+  
+}
+.product-image {
+  width: 100%;
+  height: auto;
+}
+.product-description{
+  min-height: 160px; /* Adjust this value as needed */
+  max-height: 160px;
+}
+.product-info {
+  padding: 15px;
+}
+.product-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgb(236, 227, 227);
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.price {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.add-to-cart {
+  background: linear-gradient(135deg, #FFA500, #FF4500);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.add-to-cart:hover {
+  background: linear-gradient(100deg, #FFA500, #FF4500);
+}
+
+
+
+
+
+/* About Us Page */
+.about-section {
+  padding: 50px 20px;
+  text-align: center; /* Ensures all text inside is centered */
+}
+
+.about-section h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  margin: auto; /* Centers it */
+  display: block; /* Ensures it behaves as a block element */
+  text-align: center; /* Centers text properly */
+}
+
+
+.about-section p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Team Container */
+.team-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  gap: 20px;
+}
+
+/* Team Card */
+.team-card {
+  display: flex;
+  align-items: center;
+  background: #beb4b4;
+  border-radius: 15px;
+  padding: 20px;
+  width: 48%;
+  max-width: 600px;
+  box-shadow: 0 4px 8px rgba(224, 194, 194, 0.2);
+  transition: transform 0.3s;
+  border: 2px solid #4d4747; /* Added border width, style, and color */
+}
+
+
+/* Odd cards move left */
+.team-card:nth-child(odd) {
+  align-self: flex-start;
+  margin-left: 5%;
+}
+
+/* Even cards move right */
+.team-card:nth-child(even) {
+  align-self: flex-end;
+  margin-right: 5%;
+  flex-direction: row-reverse;
+}
+
+/* Profile Image */
+.team-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.team-card:nth-child(odd) img {
+  margin-right: 15px;
+}
+
+.team-card:nth-child(even) img {
+  margin-left: 15px;
+}
+
+/* Text Section */
+.team-text {
+  text-align: left;
+}
+
+.team-text h2 {
+  font-size: 22px;
+  color: #ff6600;
+  margin: 0;
+}
+
+.team-text h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.team-text p {
+  font-size: 14px;
+  margin: 0;
+}
+
+/* 📱 Responsive Design */
+@media screen and (max-width: 768px) {
+  .team-card {
+    width: 90%;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .team-card:nth-child(even),
+  .team-card:nth-child(odd) {
+    margin: 0;
+    align-self: center;
+    flex-direction: column;
+  }
+
+  .team-card img {
+    margin: 0 0 10px 0;
+  }
+}
+
+
+
+
+/* Contact Page */
+.contact-container {
+  padding: 50px 20px;
+  text-align: center; /* Centering the top text */
+}
+
+.contact-h1 {
+  font-size: 36px;
+  text-align: center; /* Centering the heading */
+}
+
+.contact-headerp {
+  font-size: 16px;
+  color: #555;
+  text-align: center; /* Centering paragraph text */
+  max-width: 40%;
+  text-align: center;
+  margin: 0 auto; /* Centers the block itself */
+}
+
+.contact-p {
+  font-size: 16px;
+  color: #555;
+  text-align: center; /* Centering paragraph text */
+}
+
+.contact-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+  align-items: stretch; /* Ensures equal height for both cards */
+  flex-wrap: wrap; /* Allows wrapping for small screens */
+}
+
+.contact-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Pushes button to bottom */
+  text-align: center;
+  border: 2px solid #4d4747;
+}
+
+@media (max-width: 600px) {
+  .contact-options {
+    flex-direction: column;
+    align-items: center; /* Centers the stacked cards */
+  }
+  .contact-headerp {
+    max-width: 80%;
+  }
+
+  .contact-box {
+    width: 70%; /* Make boxes responsive */
+    max-width: 350px; /* Prevents them from being too wide */
+  }
+}
+
+.contact-box h2 {
+  font-size: 20px;
+}
+
+.contact-box p {
+  font-size: 14px;
+  color: #777;
+  flex-grow: 1; /* Ensures content stretches evenly */
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 15px;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: auto; /* Ensures button stays at the bottom */
+  align-self: center; /* Centers button */
+}
+
+.contact-button {
+  background-color: #ff6600;
+}
+
+
+
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+}
+.footer p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #777;
+}
+
+
+
+
+
+/* WILL'S CHANGES */
+.accessibility-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.accessibility-box {
+  flex: 1 1 30%;
+  text-align: center;
+  padding: 15px;
+  min-width: 250px;
+}
+
+/* Icons */
+.accessibility-box i {
+  font-size: 1.75rem; /* 28px converted to rem based on a 16px root font size */
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .accessibility-box {
+    flex: 1 1 45%; /* Two items per row on tablets */
+  }
+  .accessibility-box i {
+    font-size: 2vw; /* Adjust icon size based on viewport width */
+  }
+}
+
+@media (max-width: 480px) {
+  .accessibility-box {
+    flex: 1 1 100%; /* Stacks items on small screens */
+  }
+  .accessibility-box i {
+    font-size: 4vw; /* Increase size on smaller screens */
+  }
+}
+
+/* Registration form */
+.form-signin {
+  max-width: 330px;
+  padding: 1rem;
+}
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+/* Custom Styling for Registration Form Button */
+.register-btn {
+  background-color: #007bff; /* Bootstrap primary blue */
+  color: white; /* Text color */
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.register-btn:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
+
+.register-btn:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Logout Button Styling - Matches Register and Login Buttons */
+.logout-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background: linear-gradient(135deg, #FFA500, #FF4500);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logout-btn:hover {
+  background: #c82333; /* Darker red on hover for logout */
+}

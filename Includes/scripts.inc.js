@@ -47,4 +47,8 @@ let enlarged = false; // Track state
       document.body.style.fontSize = "125%"; // Enlarge
     }
     enlarged = !enlarged; // Toggle state
-  }
+}
+
+function openAccessibilityPage() {
+    window.open("https://www.w3.org/WAI/standards-guidelines/", "_blank");
+}
