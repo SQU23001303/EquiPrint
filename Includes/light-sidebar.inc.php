@@ -9,10 +9,10 @@
         <img src="Images/Vector.svg" alt="Accessibility Lead Icon">
       </button>
       <button id="darkModeToggle" class="accessibility-sidebar" aria-label="Dark Mode">
-        <img src="Images/Vector-1.svg" alt="Accessibility Lead Icon">
+        <img src="Images/Vector-1.svg" alt="Dark Mode Accessibility Button">
       </button>
-      <button class="accessibility-sidebar" aria-label="">
-        <img src="Images/Vector-2.svg" alt="Accessibility Lead Icon">
+      <button id="toggleTextSize" onclick="toggleFontSize()" class="accessibility-sidebar" aria-label="">
+        <img src="Images/Vector-2.svg" alt="Text Enlargement Accessibility Button">
       </button>
     </div>
   </div>

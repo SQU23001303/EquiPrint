@@ -37,3 +37,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
+let enlarged = false; // Track state
+
+  function toggleFontSize() {
+    if (enlarged) {
+      document.body.style.fontSize = "100%"; // Reset
+    } else {
+      document.body.style.fontSize = "125%"; // Enlarge
+    }
+    enlarged = !enlarged; // Toggle state
+  }
