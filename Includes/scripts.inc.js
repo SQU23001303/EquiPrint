@@ -68,4 +68,3 @@ document.getElementById("highContrastBtn").addEventListener("click", function() 
 if (localStorage.getItem("highContrastMode") === "enabled") {
     document.body.classList.add("high-contrast");
 }
-

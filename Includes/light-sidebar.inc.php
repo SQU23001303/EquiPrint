@@ -7,7 +7,7 @@
           <img src="Images/W3schools.png.svg" alt="Accessibility Guidelines">
         </button>
       </a>
-      <button id="highContrastBtn" class="accessibility-sidebar" aria-label="">
+      <button id="highContrastBtn" class="accessibility-sidebar" aria-label="Toggle High Contrast">
         <img src="Images/Vector.svg" alt="High Contrast Accessibility button">
       </button>
       <button id="darkModeToggle" class="accessibility-sidebar" aria-label="Dark Mode">

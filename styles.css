@@ -191,6 +191,7 @@ h1 a {
 }
 
 /* SIDEBAR */
+/* SIDEBAR */
 .sidebar {
   position: fixed;
   top: 20%;
@@ -209,7 +210,6 @@ h1 a {
   justify-content: flex-start;
   align-items: center;
   z-index: 100;
-  
 }
 
 /* Sidebar Adjustments for Mobile */
@@ -234,9 +234,10 @@ h1 a {
   width: 30px;
   height: auto;
   display: block;
-  border: none; /* Removed image border */
+  border: none;
 }
 
+/* HIGH CONTRAST MODE */
 .high-contrast {
   background-color: #000 !important; /* Black background */
   color: #FFD700 !important; /* Bright yellow text */
