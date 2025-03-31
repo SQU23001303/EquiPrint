@@ -7,8 +7,8 @@
           <img src="Images/W3schools.png.svg" alt="Accessibility Guidelines">
         </button>
       </a>
-      <button class="accessibility-sidebar" aria-label="">
-        <img src="Images/Vector.svg" alt="Accessibility Lead Icon">
+      <button id="highContrastBtn" class="accessibility-sidebar" aria-label="">
+        <img src="Images/Vector.svg" alt="High Contrast Accessibility button">
       </button>
       <button id="darkModeToggle" class="accessibility-sidebar" aria-label="Dark Mode">
         <img src="Images/Vector-1.svg" alt="Dark Mode Accessibility Button">

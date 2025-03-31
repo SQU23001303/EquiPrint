@@ -237,6 +237,18 @@ h1 a {
   border: none; /* Removed image border */
 }
 
+.high-contrast {
+  background-color: #000 !important; /* Black background */
+  color: #FFD700 !important; /* Bright yellow text */
+}
+
+.high-contrast a {
+  color: #00FFFF !important; /* Cyan links */
+}
+
+
+
+
 /* SECTIONS */
 .container-sections {
   display: flex;

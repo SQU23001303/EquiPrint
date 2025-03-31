@@ -52,3 +52,20 @@ let enlarged = false; // Track state
 function openAccessibilityPage() {
     window.open("https://www.w3.org/WAI/standards-guidelines/", "_blank");
 }
+
+document.getElementById("highContrastBtn").addEventListener("click", function() {
+    document.body.classList.toggle("high-contrast");
+
+    // Save preference in local storage
+    if (document.body.classList.contains("high-contrast")) {
+        localStorage.setItem("highContrastMode", "enabled");
+    } else {
+        localStorage.removeItem("highContrastMode");
+    }
+});
+
+// Apply stored preference on page load
+if (localStorage.getItem("highContrastMode") === "enabled") {
+    document.body.classList.add("high-contrast");
+}
+
