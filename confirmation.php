@@ -1,24 +1,40 @@
 <?php
 session_start();
+require_once("config.php");
 
-// Fetch recent order info from session
-$order_id = $_SESSION['recent_order_id'] ?? null;
-$order_date = $_SESSION['recent_order_date'] ?? date("Y-m-d");
-
-// Clear basket session (if used previously)
-unset($_SESSION['basket']);
-
-// Clear recent order session vars so they aren't reused on refresh
-unset($_SESSION['recent_order_id'], $_SESSION['recent_order_date']);
-
-// Estimate delivery (3 to 5 weekdays from order date)
-$estimated_delivery = date("l, jS F Y", strtotime($order_date . ' +4 weekdays'));
-
-// Fallback if page was accessed without order session
-if (!$order_id) {
+// Validate order ID from query parameter
+if (!isset($_GET['order_id']) || !is_numeric($_GET['order_id'])) {
     header("Location: index.php");
     exit();
 }
+
+$order_id = intval($_GET['order_id']);
+$user_id = $_SESSION['user_id'] ?? null;
+
+if (!$user_id) {
+    header("Location: login.php");
+    exit();
+}
+
+// Fetch the order to ensure it belongs to the logged-in user
+$stmt = $conn->prepare("SELECT full_name, created_at FROM orders WHERE id = ? AND user_id = ?");
+$stmt->bind_param("ii", $order_id, $user_id);
+$stmt->execute();
+$result = $stmt->get_result();
+$order = $result->fetch_assoc();
+$stmt->close();
+
+if (!$order) {
+    echo "Order not found or access denied.";
+    exit();
+}
+
+// Estimate delivery: 5 business days from order creation
+$order_date = new DateTime($order['created_at']);
+$estimated_delivery = $order_date->modify('+5 weekdays')->format('l, jS F Y');
+
+// Clear any residual basket session data
+unset($_SESSION['basket']);
 ?>
 
 <!DOCTYPE html>
@@ -36,22 +52,14 @@ if (!$order_id) {
 <?php include('includes/light-sidebar.inc.php'); ?>
 
 <div class="container mt-5 text-center">
-    <div class="alert alert-success p-4 shadow-sm rounded" style="max-width: 700px; margin: 0 auto;">
-        <h2 class="mb-3">🎉 Thank You for Your Order!</h2>
-        <p>Your order has been successfully placed and is now being processed.</p>
-
+    <div class="alert alert-success p-4 shadow-sm rounded" style="max-width: 600px; margin: 0 auto;">
+        <h2 class="mb-3">🎉 Thank You for Your Order, <?php echo htmlspecialchars($order['full_name']); ?>!</h2>
+        <p>Your order has been placed successfully.</p>
         <hr>
-
-        <h5 class="mt-3">Order Number:</h5>
-        <p><strong>#<?php echo htmlspecialchars($order_id); ?></strong></p>
-
-        <h5 class="mt-3">Estimated Delivery Date:</h5>
-        <p><strong><?php echo htmlspecialchars($estimated_delivery); ?></strong></p>
-
-        <p class="mt-4">Please check your email for confirmation and future updates.</p>
-
-        <a href="orders.php" class="btn btn-outline-primary mt-3">View My Orders</a>
-        <a href="index.php" class="btn btn-primary mt-3 ms-2">Return to Home</a>
+        <p><strong>Order Number:</strong> #<?php echo $order_id; ?></p>
+        <p><strong>Estimated Delivery:</strong> <?php echo $estimated_delivery; ?></p>
+        <p>Please check your email for confirmation and future updates.</p>
+        <a href="index.php" class="btn btn-primary mt-3">Return to Home</a>
     </div>
 </div>
 
