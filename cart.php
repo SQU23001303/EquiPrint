@@ -77,9 +77,8 @@ $conn->close();
                     </tr>
                     <tr>
                         <td colspan="5" class="text-center">
-                            <form method="POST" action="checkout.php" class="d-inline">
-                                <button type="submit" class="btn btn-success btn-lg mt-2">Proceed to Checkout</button>
-                            </form>
+                            <!-- Changed from POST form to a normal GET link -->
+                            <a href="checkout.php" class="btn btn-success btn-lg mt-2">Proceed to Checkout</a>
                         </td>
                     </tr>
                 </tfoot>
