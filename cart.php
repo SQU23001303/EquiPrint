@@ -39,11 +39,10 @@ $conn->close();
 <?php include('includes/light-header.inc.php'); ?>
 <?php include('includes/light-sidebar.inc.php'); ?>
 
+<h2 class="cart-heading">Your Shopping Cart</h2>
 <div class="container mt-5">
-    <h1>Your Shopping Cart</h1>
-
     <?php if (count($cart_items) > 0): ?>
-        <table class="table table-bordered mt-4">
+        <table class="table cart-table mt-4">
             <thead>
                 <tr>
                     <th>Product</th>
@@ -77,7 +76,7 @@ $conn->close();
 
         <!-- Checkout Form -->
         <form method="POST" action="checkout.php">
-            <button type="submit" class="btn btn-success">Proceed to Checkout</button>
+            <button type="submit" class="btn checkout-btn">Proceed to Checkout</button>
         </form>
 
     <?php else: ?>

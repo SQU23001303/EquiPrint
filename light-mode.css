@@ -968,3 +968,34 @@ h2 {
 .logout-btn:hover {
   background: #c82333; /* Darker red on hover for logout */
 }
+
+/* Cart heading styling */
+.cart-heading {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  margin-bottom: 1.5rem; /* Adds bottom margin for spacing */
+}
+/* Cart table styling */
+.cart-table {
+  background: #fff;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.cart-table th, .cart-table td {
+  padding: 12px;
+  text-align: center;
+  border: 1px solid #dee2e6;
+}
+.checkout-btn {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.checkout-btn:hover {
+  background-color: #218838;
+}
