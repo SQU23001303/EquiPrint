@@ -9,49 +9,48 @@
     <h1><a href="index.php">EquiPrint</a></h1>
 
     <!-- Navbar Section -->
-<nav class="navbar navbar-expand-lg">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-        <ul class="navbar-nav text-center">
-            <li class="nav-item"><a class="nav-link" href="prints.php">PRINTS</a></li>
-            <li class="nav-item"><a class="nav-link" href="about-us.php">ABOUT US</a></li>
-            <li class="nav-item"><a class="nav-link" href="contact.php">CONTACT</a></li>
-            <li class="nav-item"><a class="nav-link" href="faq.php">FAQ</a></li>
-            <li class="nav-item d-lg-none mt-2">
-                <button class="navbar-img">
-                    <img src="Images/Cart Icon.svg" alt="Shopping Basket">
-                </button>
-                <br>
-            </li>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav text-center">
+                <li class="nav-item"><a class="nav-link" href="prints.php">PRINTS</a></li>
+                <li class="nav-item"><a class="nav-link" href="about-us.php">ABOUT US</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.php">CONTACT</a></li>
+                <li class="nav-item"><a class="nav-link" href="faq.php">FAQ</a></li>
+                <li class="nav-item d-lg-none mt-2">
+                    <a href="cart.php" class="navbar-img">
+                        <img src="Images/Cart Icon.svg" alt="Shopping Basket">
+                    </a>
+                    <br>
+                </li>
 
-            <!-- Authentication Buttons for Mobile -->
-            <?php if (isset($_SESSION['user_id'])): ?>
-                <li class="nav-item d-lg-none mt-2">
-                    <a href="logout.php" class="auth-btn logout-btn w-100">Logout</a>
-                </li>
-                <br>
-            <?php else: ?>
-                <li class="nav-item d-lg-none mt-2">
-                    <a href="register.php" class="auth-btn register-btn w-100">Register</a>
-                </li>
-                <br>
-                <li class="nav-item d-lg-none mt-2">
-                    <a href="login.php" class="auth-btn login-btn w-100">Login</a>
-                </li>
-            <?php endif; ?>
-        </ul>
-    </div>
-</nav>
-
+                <!-- Authentication Buttons for Mobile -->
+                <?php if (isset($_SESSION['user_id'])): ?>
+                    <li class="nav-item d-lg-none mt-2">
+                        <a href="logout.php" class="auth-btn logout-btn w-100">Logout</a>
+                    </li>
+                    <br>
+                <?php else: ?>
+                    <li class="nav-item d-lg-none mt-2">
+                        <a href="register.php" class="auth-btn register-btn w-100">Register</a>
+                    </li>
+                    <br>
+                    <li class="nav-item d-lg-none mt-2">
+                        <a href="login.php" class="auth-btn login-btn w-100">Login</a>
+                    </li>
+                <?php endif; ?>
+            </ul>
+        </div>
+    </nav>
 
     <!-- Cart Icon for Desktop -->
     <div class="d-none d-lg-block">
-        <button class="navbar-img" aria-label="">
+        <a href="cart.php" class="navbar-img" aria-label="Cart">
             <img src="Images/CartIcon.png" alt="Shopping Basket">
-        </button>
+        </a>
     </div>
 
     <!-- Authentication Buttons for Desktop -->

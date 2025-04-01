@@ -1,5 +1,29 @@
 <?php
 session_start();
+require_once("config.php");
+
+if (!isset($_SESSION['user_id'])) {
+    header("Location: login.php");
+    exit();
+}
+
+$user_id = $_SESSION['user_id'];
+
+// Fetch the current user's cart items from the database
+$sql = "SELECT id, product_name, product_price, product_image, quantity FROM cart WHERE user_id = ?";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("i", $user_id);
+$stmt->execute();
+$result = $stmt->get_result();
+
+$cart_items = [];
+$total = 0;
+while ($row = $result->fetch_assoc()) {
+    $cart_items[] = $row;
+    $total += $row['product_price'] * $row['quantity'];
+}
+$stmt->close();
+$conn->close();
 ?>
 
 <!DOCTYPE html>
@@ -18,41 +42,40 @@ session_start();
 <div class="container mt-5">
     <h1>Your Shopping Cart</h1>
 
-    <?php if (isset($_SESSION['cart']) && !empty($_SESSION['cart'])): ?>
+    <?php if (count($cart_items) > 0): ?>
         <table class="table table-bordered mt-4">
             <thead>
                 <tr>
                     <th>Product</th>
-                    <th>Description</th>
                     <th>Price (&pound;)</th>
+                    <th>Quantity</th>
+                    <th>Subtotal (&pound;)</th>
                     <th>Action</th>
                 </tr>
             </thead>
             <tbody>
-                <?php 
-                $total = 0;
-                foreach ($_SESSION['cart'] as $index => $item): 
-                    $total += $item['price'];
-                ?>
+                <?php foreach ($cart_items as $item): ?>
                     <tr>
                         <td><?php echo htmlspecialchars($item['product_name']); ?></td>
-                        <td><?php echo htmlspecialchars($item['description']); ?></td>
-                        <td><?php echo number_format($item['price'], 2); ?></td>
+                        <td><?php echo number_format($item['product_price'], 2); ?></td>
+                        <td><?php echo htmlspecialchars($item['quantity']); ?></td>
+                        <td><?php echo number_format($item['product_price'] * $item['quantity'], 2); ?></td>
                         <td>
                             <form method="POST" action="remove_from_cart.php">
-                                <input type="hidden" name="index" value="<?php echo $index; ?>">
+                                <input type="hidden" name="cart_id" value="<?php echo $item['id']; ?>">
                                 <button type="submit" class="btn btn-danger btn-sm">Remove</button>
                             </form>
                         </td>
                     </tr>
                 <?php endforeach; ?>
                 <tr>
-                    <td colspan="2"><strong>Total</strong></td>
+                    <td colspan="3"><strong>Total</strong></td>
                     <td colspan="2"><strong>&pound;<?php echo number_format($total, 2); ?></strong></td>
                 </tr>
             </tbody>
         </table>
 
+        <!-- Checkout Form -->
         <form method="POST" action="checkout.php">
             <button type="submit" class="btn btn-success">Proceed to Checkout</button>
         </form>
