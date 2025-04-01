@@ -968,25 +968,3 @@ h2 {
 .logout-btn:hover {
   background: #c82333; /* Darker red on hover for logout */
 }
-
-/* Cart heading styling */
-.cart-heading {
-  text-align: center;
-  color: rgb(0, 0, 0);
-  margin-bottom: 1.5rem; /* Adds bottom margin for spacing */
-  font-size: 2.5rem;
-}
-.cart-wrapper {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.cart-wrapper table {
-  border-radius: 8px;
-  overflow: hidden;
-}
-
-.cart-wrapper .checkout-button-wrapper {
-  text-align: center;
-  margin-top: 20px;
-}
