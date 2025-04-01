@@ -31,8 +31,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Knight 1 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="Intricate Fantasy-themed knight, clad in steel armor with 2.5&quot; inch base. Includes Armour Set and Blade.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/knight1.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -49,8 +50,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Wizard 1 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="Enchanting High-Fantasy inspired Wizard, wearing flowing robes and Wooden Mage Staff. 2.5&quot; base, comes with Staff.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Wizard1.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -67,8 +69,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Knight 2 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="Fierce and intimidating Fantasy inspired Knight, with Heavy Armor 2.5&quot; base. Comes with Sword and Shield.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Knight2.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -85,8 +88,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Assassin 1 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="Intricate Fantasy-themed assassin, clad in a dark hooded cloak and light armor, posed dynamically on a 2.5&quot; inch base. Includes Dual Daggers.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Assassin1.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -103,8 +107,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Mage 1 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="Mystical fantasy-themed mage, draped in enchanted robes with arcane symbols, standing atop a 2.5” inch base. Includes Spellbook.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Mage1.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -121,8 +126,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Elven 1 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="Elegant fantasy-themed elven warrior, clad in silver armour with a flowing blue cape, standing on a 2.5” inch base. Includes Enchanted Bow.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Elven1.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -139,8 +145,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Elven 2 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="Elegant fantasy-themed elf, clad in finely crafted silver armour with a flowing cloak, posed on a 2.5” inch base. Includes Elven Blade.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Elven2.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -157,8 +164,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Knight 3 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="Divine fantasy-themed knight, clad in radiant gold and silver armour with a flowing white cape, standing resolute on a 2.5” inch base. Includes Blessed Warhammer">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Knight3.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -175,8 +183,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Cyberpunk 1 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="A sleek, high-tech bounty hunter with a robotic arm, a cybernetic eye, and a long trench coat lined with LED circuits.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Cyberpunk1.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -193,8 +202,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Steampunk 1 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="A Victorian-era adventurer dressed in a long coat with brass buttons, a high collar, and a pair of goggles resting on their top hat.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Steampunk1.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -211,8 +221,9 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Alien 1 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="A reptilian humanoid warrior with scaled armor, clawed hands, and an elongated head with a crest running down its back.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Alien1.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
@@ -229,12 +240,14 @@
             <div class="product-footer">
                 <span class="price">&pound;10.00</span>
                 <input type="hidden" name="product_name" value="Sorcerer 1 Statue">
-                <input type="hidden" name="price" value="10.00">
+                <input type="hidden" name="product_price" value="10.00">
                 <input type="hidden" name="description" value="A hooded sorcerer with tattered robes, holding a twisted staff with a glowing crystal at the top.">
+                <input type="hidden" name="product_image" value="Images/ProductImages/Sorcerer1.webp">
                 <button type="submit" class="add-to-cart">Add to Cart</button>
             </div>
         </div>
     </form>
+    <!-- End of Products -->
 </section>
 
 <?php include('includes/light-footer.inc.php'); ?>
