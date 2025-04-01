@@ -7,7 +7,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link id="lightThemeStylesheet" rel="stylesheet" href="light-mode.css">
     <link id="darkThemeStylesheet" rel="stylesheet" href="dark-mode.css" disabled>
-
     <title>Prints</title>
 </head>
 <body>
@@ -20,10 +19,9 @@
         <p class="contact-headerp">View our library of 3D-Prints below, superb quality and made by a suite of talented individuals.</p>
   </div>
 
-
   <section class="product-grid">
     <!-- Knight 1 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/knight1.webp" alt="Knight 1 Statue" class="product-image">
         <div class="product-info">
             <h2>Knight 1 Statue</h2>
@@ -41,7 +39,7 @@
     </form>
 
     <!-- Wizard 1 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Wizard1.webp" alt="Wizard 1 Statue" class="product-image">
         <div class="product-info">
             <h2>Wizard 1 Statue</h2>
@@ -59,7 +57,7 @@
     </form>
 
     <!-- Knight 2 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Knight2.webp" alt="Knight 2 Statue" class="product-image">
         <div class="product-info">
             <h2>Knight 2 Statue</h2>
@@ -77,7 +75,7 @@
     </form>
 
     <!-- Assassin 1 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Assassin1.webp" alt="Assassin 1 Statue" class="product-image">
         <div class="product-info">
             <h2>Assassin 1 Statue</h2>
@@ -95,7 +93,7 @@
     </form>
 
     <!-- Mage 1 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Mage1.webp" alt="Mage 1 Statue" class="product-image">
         <div class="product-info">
             <h2>Mage 1 Statue</h2>
@@ -113,7 +111,7 @@
     </form>
 
     <!-- Elven 1 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Elven1.webp" alt="Elven 1 Statue" class="product-image">
         <div class="product-info">
             <h2>Elven 1 Statue</h2>
@@ -131,7 +129,7 @@
     </form>
 
     <!-- Elven 2 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Elven2.webp" alt="Elven 2 Statue" class="product-image">
         <div class="product-info">
             <h2>Elven 2 Statue</h2>
@@ -149,7 +147,7 @@
     </form>
 
     <!-- Knight 3 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Knight3.webp" alt="Knight 3 Statue" class="product-image">
         <div class="product-info">
             <h2>Knight 3 Statue</h2>
@@ -167,7 +165,7 @@
     </form>
 
     <!-- Cyberpunk 1 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Cyberpunk1.webp" alt="Cyberpunk 1 Statue" class="product-image">
         <div class="product-info">
             <h2>Cyberpunk 1 Statue</h2>
@@ -185,7 +183,7 @@
     </form>
 
     <!-- Steampunk 1 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Steampunk1.webp" alt="Steampunk 1 Statue" class="product-image">
         <div class="product-info">
             <h2>Steampunk 1 Statue</h2>
@@ -203,7 +201,7 @@
     </form>
 
     <!-- Alien 1 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Alien1.webp" alt="Alien 1 Statue" class="product-image">
         <div class="product-info">
             <h2>Alien 1 Statue</h2>
@@ -221,7 +219,7 @@
     </form>
 
     <!-- Sorcerer 1 Statue -->
-    <form method="POST" action="add_to_cart.php" class="product-card">
+    <form method="POST" action="add-to-cart.php" class="product-card">
         <img src="Images/ProductImages/Sorcerer1.webp" alt="Sorcerer 1 Statue" class="product-image">
         <div class="product-info">
             <h2>Sorcerer 1 Statue</h2>
@@ -239,9 +237,8 @@
     </form>
 </section>
 
-
-  <?php include('includes/light-footer.inc.php'); ?>
-  <script src="Includes/scripts.inc.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<?php include('includes/light-footer.inc.php'); ?>
+<script src="Includes/scripts.inc.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
