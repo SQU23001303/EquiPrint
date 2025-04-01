@@ -1,5 +1,9 @@
 <!-- Navbar.php -->
-<?php session_start(); ?> <!-- Start the session to track login status -->
+<?php
+if (session_status() === PHP_SESSION_NONE) {
+    session_start(); // Start session only if one isn't already active
+}
+?>
 <br>
 <div class="nav-bar">
     <!-- Logo Section -->
