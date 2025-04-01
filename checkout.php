@@ -24,7 +24,6 @@ while ($row = $result->fetch_assoc()) {
 $stmt->close();
 
 // Handle checkout on form submission
-$checkout_success = false;
 $error_message = "";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($cart_items)) {
@@ -63,7 +62,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($cart_items)) {
         $clear_cart->close();
 
         $conn->commit();
-        $checkout_success = true;
+
+        // ✅ Redirect to confirmation page with order ID
+        header("Location: confirmation.php?order_id=" . $order_id);
+        exit();
+
     } catch (Exception $e) {
         $conn->rollback();
         $error_message = "Checkout failed: " . $e->getMessage();
@@ -86,13 +89,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($cart_items)) {
 <div class="container mt-5">
     <h2 class="text-center mb-4">Checkout</h2>
 
-    <?php if ($checkout_success): ?>
-        <div class="alert alert-success text-center">
-            <h4>Thank you for your order!</h4>
-            <p>Your order has been successfully placed.</p>
-            <a href="orders.php" class="btn btn-primary mt-3">View Orders</a>
+    <?php if (!empty($error_message)): ?>
+        <div class="alert alert-danger text-center">
+            <?php echo htmlspecialchars($error_message); ?>
         </div>
-    <?php elseif (!empty($cart_items)): ?>
+    <?php endif; ?>
+
+    <?php if (!empty($cart_items)): ?>
         <form method="POST" class="border rounded p-4 shadow-sm" style="max-width: 800px; margin: 0 auto;">
             <h5>Order Summary</h5>
             <table class="table table-bordered mt-3">
