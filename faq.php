@@ -11,15 +11,17 @@
     <title>FAQ</title>
 </head>
 <body>
-  
+  <!-- Pulls the header and siderbar into the website page -->
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
   
+    <!-- FAQ introuction -->
   <div class="contact-container">
         <h1 class="contact-h1">FAQ</h1>
         <p class="contact-headerp">Got questions? We've got answers! Check out our FAQ below or reach out to us via Email or Discord.</p>   
   </div>
 
+    <!-- FAQ container -->
   <div class="dropdown-container" id="dropdownContainer(this)">
         <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>What is EquiPrint?</p> <span class="icon" id="icon">+</span>
@@ -29,6 +31,7 @@
         </div>
   </div>
 
+  <!-- FAQ container -->
   <div class="dropdown-container" id="dropdownContainer(this)">
         <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>How do I navigate your site if I have a disability?</p><span class="icon" id="icon">+</span>
@@ -38,6 +41,7 @@
         </div>
   </div>
 
+  <!-- FAQ container -->
   <div class="dropdown-container" id="dropdownContainer(this)">
         <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>Are your products accessible for people with disabilities?</p><span class="icon" id="icon">+</span>
@@ -47,6 +51,7 @@
         </div>
   </div>
 
+  <!-- FAQ container -->
   <div class="dropdown-container" id="dropdownContainer(this)">
         <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>How do I contact you if I need further assistance?</p><span class="icon" id="icon">+</span>
@@ -56,6 +61,7 @@
         </div>
   </div>
 
+  <!-- FAQ container -->
   <div class="dropdown-container" id="dropdownContainer(this)">
         <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>Can I access your site from mobile devices?</p><span class="icon" id="icon">+</span>
@@ -65,6 +71,7 @@
         </div>
   </div>
   
+  <!-- Pulls the footer into the page -->
   <?php include('includes/light-footer.inc.php'); ?>
   <script src="Includes/scripts.inc.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

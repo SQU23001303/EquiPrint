@@ -13,13 +13,16 @@
 
 <body>
   
+    <!-- Pulls the headers and sidebar in -->
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
+
   <section class="about-section">
         <h1>About Us</h1>
         <p>Meet the dedicated experts and why we do what we do.</p>
-
+        <!-- Creates the container for employee cards -->
         <div class="team-container">
+            <!-- Team card -->
             <div class="team-card">
                 <img src="Images/Steve.jpg" alt="Steve Scorse">
                 <div class="team-text">
@@ -29,6 +32,7 @@
                 </div>
             </div>
 
+            <!-- Team Card -->
             <div class="team-card">
                 <img src="Images/Ben.jpg" alt="Ben Squire">
                 <div class="team-text">
@@ -38,6 +42,7 @@
                 </div>
             </div>
 
+            <!-- Team Card -->
             <div class="team-card">
                 <img src="Images/Will.jpg" alt="Will Young">
                 <div class="team-text">

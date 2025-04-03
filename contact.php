@@ -11,14 +11,16 @@
     <title>Contact</title>
 </head>
 <body>
-  
+  <!-- Pulls the header and sidebar into the site -->
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
   
+    <!-- Contact container -->
   <div class="contact-container">
         <h1 class="contact-h1">Contact</h1>
         <p class="contact-headerp">We are here to help! Get in contact with us below either by Email or Discord. We will try to get back to you ASAP!</p>
         
+        <!-- Different contact boxes for users to interactive with -->
         <div class="contact-options">
             <div class="contact-box">
                 <h2 class="contact-h2">Email Us</h2>
@@ -34,7 +36,7 @@
     </div>
 
 
-  
+  <!-- Pulls the footer into the website -->
   <?php include('includes/light-footer.inc.php'); ?>
   <script src="Includes/scripts.inc.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

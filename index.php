@@ -12,6 +12,7 @@
 </head>
 <body>
 
+  <!-- Pulls the header and sidebar into the page -->
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
 
@@ -26,6 +27,7 @@
     </div>
   </div>
 
+<!-- The accessibility container-->
   <div class="container-sections">
     <div class="section">
       <hr>
@@ -53,6 +55,7 @@
     </div>
 </div>
 
+<!-- Shop now section on the website -->
 <section class="hero">
   <div class="hero-content">
     <div class="hero-header">
@@ -68,7 +71,7 @@
 </section>
 
 
-
+  <!-- Pulls the footer into the page -->
   <?php include('includes/light-footer.inc.php'); ?>
   <script src="Includes/scripts.inc.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
