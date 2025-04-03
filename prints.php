@@ -11,9 +11,11 @@
 </head>
 <body>
   
+    <!-- Pulls the Header and siderbar into the page-->
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
 
+  <!-- Print container title -->
   <div class="contact-container">
         <h1 class="contact-h1">Print Library</h1>
         <p class="contact-headerp">View our library of 3D-Prints below, superb quality and made by a suite of talented individuals.</p>
@@ -250,6 +252,7 @@
     <!-- End of Products -->
 </section>
 
+<!-- Pulls the footer into the page -->
 <?php include('includes/light-footer.inc.php'); ?>
 <script src="Includes/scripts.inc.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

@@ -11,12 +11,13 @@
 </head>
 <body>
 
+  <!-- Pulls the header and sidebar into the page -->
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
 
 
 
-
+  <!-- Pulls the footer into the page -->
   <?php include('includes/light-footer.inc.php'); ?>
   <script src="Includes/script.inc.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

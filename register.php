@@ -11,6 +11,7 @@
     <title>Register</title>
 </head>
 <body>
+  <!-- Pulls the header and siderbar into the page -->
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
 
@@ -64,6 +65,7 @@
   </form>
 </main>
 
+  <!-- Pulls the footer into the page -->
   <?php include('includes/light-footer.inc.php'); ?>
   <script src="Includes/scripts.inc.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
