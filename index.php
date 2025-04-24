@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link id="lightThemeStylesheet" rel="stylesheet" href="light-mode.css">
     <link id="darkThemeStylesheet" rel="stylesheet" href="dark-mode.css" disabled>
-
+    
     <title>Homepage</title>
 </head>
 <body>
@@ -20,7 +20,7 @@
     <div class="content">
       <!-- Main content of the page -->
 
-      <h2 class="Index-H2"> 3D Printing Made </h2>
+      <h2 class="Index-H2">3D Printing Made</h2>
       <h1 class="Index">ACCESSIBLE</h1>
       <p class="Index-P"> Shop our 3D prints without hassle - every aspect of our website <br> has been accessible with a site of features</p>
       <img class="Index-Image" src="Images/Index.jpg" alt="">
@@ -73,7 +73,7 @@
 
   <!-- Pulls the footer into the page -->
   <?php include('includes/light-footer.inc.php'); ?>
-  <script src="Includes/scripts.inc.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="includes/scripts.inc.js"></script>
 </body>
 </html>

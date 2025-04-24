@@ -1,3 +1,4 @@
+
 function toggleDropdown(button) {
     var container = button.parentElement; // Get the clicked dropdown container
     var content = container.querySelector(".dropdown-content");
@@ -25,18 +26,20 @@ document.addEventListener("DOMContentLoaded", function () {
 
     darkModeToggle.addEventListener("click", function () {
         if (darkThemeStylesheet.disabled) {
-            // Enable dark theme and disable light theme
-            darkThemeStylesheet.disabled = false;
-            lightThemeStylesheet.disabled = true;
-            localStorage.setItem("theme", "dark");
+          darkThemeStylesheet.disabled = false;
+          lightThemeStylesheet.disabled = true;
+          localStorage.setItem("theme", "dark");
+          alert("🌙 Dark mode enabled");
         } else {
-            // Enable light theme and disable dark theme
-            darkThemeStylesheet.disabled = true;
-            lightThemeStylesheet.disabled = false;
-            localStorage.setItem("theme", "light");
+          darkThemeStylesheet.disabled = true;
+          lightThemeStylesheet.disabled = false;
+          localStorage.setItem("theme", "light");
+          alert("☀️ Light mode enabled");
         }
     });
 });
+
+  
 
 let enlarged = false; // Track state
 

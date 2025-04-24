@@ -1,15 +1,16 @@
 /* General Reset */
-html, body {
+body {
   margin: 0;
   padding: 0;
   height: 100%;
   width: 100%;
+  color: #FFFFFF !important;
   overflow-x: hidden; /* Prevents horizontal scrolling */
   background: linear-gradient(to right, 
-        rgb(59, 59, 54) 20%,  /* Start with cream */
-        white 40%,               /* Quickly transition to white */
-        white 60%,               /* Keep a small white center */
-        rgb(46, 46, 40) 80%   /* Quickly transition back to cream */
+        rgb(34, 34, 32) 20%,  /* Start with cream */
+        rgb(48, 44, 44) 40%,               /* Quickly transition to white */
+        rgb(48, 44, 44) 60%,               /* Keep a small white center */
+        rgb(173, 28, 202) 80%   /* Quickly transition back to cream */
     );
 }
 
@@ -21,18 +22,19 @@ html, body {
   justify-content: center;
   align-items: center;
   background-color: #f0f0f0;
+  color: #ffffff !important; 
 }
 
 /* NAVIGATION BAR */
 .nav-bar {
   display: flex;
-  background-color: #ffffff;
+  background-color: #1f1c1c;
   border-radius: 10px;
   padding: 10px 20px;
-  border: 2px outset black;
+  border: 2px outset rgb(255, 255, 255);
   justify-content: space-between;
   align-items: center;
-  color: black;
+  color: #ffffff !important; 
   min-width: fit-content;
 }
 
@@ -68,10 +70,11 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+  color: #ffffff !important; 
 }
 
 li a {
-  color: black;
+  color: #ffffff !important; 
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -82,7 +85,7 @@ li a {
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
-  color: white;
+  color: #ffffff !important; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -93,7 +96,7 @@ li a {
   padding: 10px 20px;
   font-size: 1rem;
   font-weight: bold;
-  color: white;
+  color: #ffffff !important; 
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -114,22 +117,25 @@ h1 {
   padding: 10px;
   text-align: left;
   font-weight: bold;
+  color: #ffffff !important; 
 }
 
 h1 a {
   text-decoration: none;
-  color: black;
+  color: #ffffff !important; 
 }
 
 .Index-H2 {
   text-align: center;
   font-size: 3vw;
   padding: 0;
+  color: #FFFFFF !important;
 }
 
 .Index-P {
   text-align: center;
   font-size: 1vw;
+  color: #ffffff !important; 
 }
 
 .Index {
@@ -303,21 +309,26 @@ h1 a {
   margin: auto;
   width: 90%;
   padding: 50px;
+  color: #ffffff !important; 
 }
 .hero-content {
   width: 100%;
   text-align: left;
+  color: #ffffff !important; 
 }
+
 .hero-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  color: #ffffff !important; 
 }
 .h1-hero {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 10px;
+  color: #ffffff !important; 
 }
 .p-hero {
   font-size: 1.5rem;
@@ -368,7 +379,7 @@ h1 a {
 
 
 footer {
-  color: rgb(0, 0, 0);
+  color: #ffffff !important; 
   padding: 20px 40px;
   display: flex;
   justify-content: space-between;
@@ -396,26 +407,27 @@ footer {
   flex-direction: column;
   margin-left: auto;
   margin-right: 100px;
+  color: #ffffff !important; 
 }
-
 .footer-links a {
-  color: rgb(0, 0, 0);
+  color: #ffffff !important; 
   text-decoration: none;
   transition: color 0.3s;
 }
 
 .footer-links a:hover {
-  color: #fff;
+  color: #ffffff !important; 
 }
 
 .footer-right {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  color: #ffffff !important; 
 }
 
 .footer-right a {
-  color: #000000;
+  color: #ffffff !important; 
   text-decoration: none;
 }
 
@@ -967,4 +979,8 @@ h2 {
 
 .logout-btn:hover {
   background: #c82333; /* Darker red on hover for logout */
+}
+
+.body, .p, .h1, .h2, .h3, .h4, .h5, .h6, .a {
+  color: #ffffff !important; 
 }
