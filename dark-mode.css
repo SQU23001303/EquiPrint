@@ -200,7 +200,7 @@ h1 a {
 .sidebar {
   position: fixed;
   top: 20%;
-  right: 0;
+  right: -5%;
   width: 60px;
   height: auto;
   max-height: 80vh;
