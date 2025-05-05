@@ -8,9 +8,9 @@ body {
   overflow-x: hidden; /* Prevents horizontal scrolling */
   background: linear-gradient(to right, 
         rgb(34, 34, 32) 20%,  /* Start with cream */
-        rgb(48, 44, 44) 40%,               /* Quickly transition to white */
-        rgb(48, 44, 44) 60%,               /* Keep a small white center */
-        rgb(173, 28, 202) 80%   /* Quickly transition back to cream */
+        rgb(61, 56, 56) 40%,               /* Quickly transition to white */
+        rgb(61, 56, 56) 60%,               /* Keep a small white center */
+        rgb(34, 34, 32) 80%   /* Quickly transition back to cream */
     );
 }
 
@@ -716,6 +716,7 @@ h2 {
 .contact-container {
   padding: 50px 20px;
   text-align: center; /* Centering the top text */
+  color: #FFFFFF;
 }
 
 .contact-h1 {
@@ -725,7 +726,7 @@ h2 {
 
 .contact-headerp {
   font-size: 16px;
-  color: #555;
+  color: #FFFFFF;
   text-align: center; /* Centering paragraph text */
   max-width: 40%;
   text-align: center;
@@ -759,6 +760,7 @@ h2 {
   justify-content: space-between; /* Pushes button to bottom */
   text-align: center;
   border: 2px solid #4d4747;
+  color: #777;
 }
 
 @media (max-width: 600px) {
@@ -768,6 +770,7 @@ h2 {
   }
   .contact-headerp {
     max-width: 80%;
+    color: #FFFFFF;
   }
 
   .contact-box {
@@ -778,11 +781,12 @@ h2 {
 
 .contact-box h2 {
   font-size: 20px;
+  color: #000000;
 }
 
 .contact-box p {
   font-size: 14px;
-  color: #777;
+  color: #000000;
   flex-grow: 1; /* Ensures content stretches evenly */
 }
 

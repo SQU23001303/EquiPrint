@@ -29,12 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
           darkThemeStylesheet.disabled = false;
           lightThemeStylesheet.disabled = true;
           localStorage.setItem("theme", "dark");
-          alert("🌙 Dark mode enabled");
         } else {
           darkThemeStylesheet.disabled = true;
           lightThemeStylesheet.disabled = false;
           localStorage.setItem("theme", "light");
-          alert("☀️ Light mode enabled");
         }
     });
 });

@@ -15,14 +15,14 @@
   <?php include('includes/light-header.inc.php'); ?>
   <?php include('includes/light-sidebar.inc.php'); ?>
   
-    <!-- FAQ introuction -->
+    <!-- FAQ introduction -->
   <div class="contact-container">
         <h1 class="contact-h1">FAQ</h1>
         <p class="contact-headerp">Got questions? We've got answers! Check out our FAQ below or reach out to us via Email or Discord.</p>   
   </div>
 
     <!-- FAQ container -->
-  <div class="dropdown-container" id="dropdownContainer(this)">
+  <div class="dropdown-container text-black" id="dropdownContainer(this)">
         <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>What is EquiPrint?</p> <span class="icon" id="icon">+</span>
         </button>
@@ -32,7 +32,7 @@
   </div>
 
   <!-- FAQ container -->
-  <div class="dropdown-container" id="dropdownContainer(this)">
+  <div class="dropdown-container text-black" id="dropdownContainer(this)">
         <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>How do I navigate your site if I have a disability?</p><span class="icon" id="icon">+</span>
         </button>
@@ -42,7 +42,7 @@
   </div>
 
   <!-- FAQ container -->
-  <div class="dropdown-container" id="dropdownContainer(this)">
+  <div class="dropdown-container text-black" id="dropdownContainer(this)">
         <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>Are your products accessible for people with disabilities?</p><span class="icon" id="icon">+</span>
         </button>
@@ -52,7 +52,7 @@
   </div>
 
   <!-- FAQ container -->
-  <div class="dropdown-container" id="dropdownContainer(this)">
+  <div class="dropdown-container text-black" id="dropdownContainer(this)">
         <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>How do I contact you if I need further assistance?</p><span class="icon" id="icon">+</span>
         </button>
@@ -62,7 +62,7 @@
   </div>
 
   <!-- FAQ container -->
-  <div class="dropdown-container" id="dropdownContainer(this)">
+  <div class="dropdown-container text-black" id="dropdownContainer(this)">
         <button class="dropdown-button" onclick="toggleDropdown(this)()">
             <p>Can I access your site from mobile devices?</p><span class="icon" id="icon">+</span>
         </button>

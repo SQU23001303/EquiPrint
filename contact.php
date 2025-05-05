@@ -21,7 +21,7 @@
         <p class="contact-headerp">We are here to help! Get in contact with us below either by Email or Discord. We will try to get back to you ASAP!</p>
         
         <!-- Different contact boxes for users to interactive with -->
-        <div class="contact-options">
+        <div class="contact-options text-black">
             <div class="contact-box">
                 <h2 class="contact-h2">Email Us</h2>
                 <p class="contact-p">Have any questions or inquiries? We'd love to hear from you! Send us an email and we'll get back to you as soon as possible.</p>
