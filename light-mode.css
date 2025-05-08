@@ -6,10 +6,10 @@ html, body {
   width: 100%;
   overflow-x: hidden; /* Prevents horizontal scrolling */
   background: linear-gradient(to right, 
-        rgb(233, 233, 210) 20%,  /* Start with cream */
+        #FFFAF1 20%,  /* Start with cream */
         white 40%,               /* Quickly transition to white */
         white 60%,               /* Keep a small white center */
-        rgb(233, 233, 210) 80%   /* Quickly transition back to cream */
+        #FFFAF1 80%   /* Quickly transition back to cream */
     );
 }
 
