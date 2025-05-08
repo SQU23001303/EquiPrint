@@ -373,8 +373,11 @@ h1 a {
   }
 }
 
-
-
+.centered-basket {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
 
 
 

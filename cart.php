@@ -41,55 +41,63 @@ $conn->close();
 <?php include('includes/light-header.inc.php'); ?>
 <?php include('includes/light-sidebar.inc.php'); ?>
 
-<div class="container mt-5">
-    <h2 class="text-center mb-4">Your Basket</h2>
-
+<div class="container mt-5 centered-basket">
     <?php if (!empty($cart_items)): ?>
-        <div class="d-flex justify-content-center">
-            <table class="table table-striped table-bordered rounded shadow-sm" style="max-width: 900px; width: 100%;">
-                <thead class="table-light">
-                    <tr>
-                        <th>Product</th>
-                        <th>Price (&pound;)</th>
-                        <th>Quantity</th>
-                        <th>Total (&pound;)</th>
-                        <th>Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php foreach ($cart_items as $item): ?>
-                        <tr>
-                            <td><?php echo htmlspecialchars($item['product_name']); ?></td>
-                            <td><?php echo number_format($item['product_price'], 2); ?></td>
-                            <td><?php echo (int)$item['quantity']; ?></td>
-                            <td><?php echo number_format($item['product_price'] * $item['quantity'], 2); ?></td>
-                            <td>
-                                <form method="POST" action="remove_from_cart.php">
-                                    <input type="hidden" name="cart_id" value="<?php echo $item['id']; ?>">
-                                    <button type="submit" class="btn btn-danger btn-sm">Remove</button>
-                                </form>
-                            </td>
-                        </tr>
-                    <?php endforeach; ?>
-                </tbody>
-                <tfoot>
-                    <tr>
-                        <td colspan="3" class="text-end"><strong>Total</strong></td>
-                        <td colspan="2"><strong>&pound;<?php echo number_format($total, 2); ?></strong></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" class="text-center">
-                            <!-- Changed from POST form to a normal GET link -->
-                            <a href="checkout.php" class="btn btn-success btn-lg mt-2">Proceed to Checkout</a>
-                        </td>
-                    </tr>
-                </tfoot>
-            </table>
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <!-- Heading inside the same column as the table -->
+                <h2 class="text-center mb-4">Your Basket</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered shadow-sm rounded">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Product</th>
+                                <th>Price (&pound;)</th>
+                                <th>Quantity</th>
+                                <th>Total (&pound;)</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($cart_items as $item): ?>
+                                <tr>
+                                    <td><?php echo htmlspecialchars($item['product_name']); ?></td>
+                                    <td><?php echo number_format($item['product_price'], 2); ?></td>
+                                    <td><?php echo (int)$item['quantity']; ?></td>
+                                    <td><?php echo number_format($item['product_price'] * $item['quantity'], 2); ?></td>
+                                    <td>
+                                        <form method="POST" action="remove_from_cart.php" class="d-inline">
+                                            <input type="hidden" name="cart_id" value="<?php echo $item['id']; ?>">
+                                            <button type="submit" class="btn btn-danger btn-sm">Remove</button>
+                                        </form>
+                                    </td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <td colspan="3" class="text-end"><strong>Total</strong></td>
+                                <td colspan="2"><strong>&pound;<?php echo number_format($total, 2); ?></strong></td>
+                            </tr>
+                            <tr>
+                                <td colspan="5" class="text-center">
+                                    <a href="checkout.php" class="btn btn-success btn-lg mt-2">Proceed to Checkout</a>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+            </div>
         </div>
     <?php else: ?>
-        <p class="text-center mt-4">Your basket is currently empty.</p>
+        <div class="alert alert-info text-center mt-4">
+            <h2>Your Basket</h2>
+            <p>Your basket is currently empty.</p>
+        </div>
     <?php endif; ?>
 </div>
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 <script src="includes/scripts.inc.js"></script>

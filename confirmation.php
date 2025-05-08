@@ -53,7 +53,7 @@ unset($_SESSION['basket']);
 
 <div class="container mt-5 text-center">
     <div class="alert alert-success p-4 shadow-sm rounded" style="max-width: 600px; margin: 0 auto;">
-        <h2 class="mb-3">🎉 Thank You for Your Order, <?php echo htmlspecialchars($order['full_name']); ?>!</h2>
+        <h2 class="mb-3">Thank You for Your Order, <?php echo htmlspecialchars($order['full_name']); ?>!</h2>
         <p>Your order has been placed successfully.</p>
         <hr>
         <p><strong>Order Number:</strong> #<?php echo $order_id; ?></p>
