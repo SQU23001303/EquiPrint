@@ -216,7 +216,7 @@ h1 a {
 @media (max-width: 768px) {
   .sidebar {
     width: 40px;
-    right: -5px;
+    right: 0px;
   }
 }
 
