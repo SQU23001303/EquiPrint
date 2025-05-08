@@ -80,7 +80,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($cart_items)) {
     <meta charset="UTF-8">
     <title>Checkout - Equiprint</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="light-mode.css">
+    <link id="lightThemeStylesheet" rel="stylesheet" href="light-mode.css">
+    <link id="darkThemeStylesheet" rel="stylesheet" href="dark-mode.css" disabled>
 </head>
 <body>
 <?php include('includes/light-header.inc.php'); ?>

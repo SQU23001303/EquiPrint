@@ -379,6 +379,13 @@ h1 a {
   padding: 2rem;
 }
 
+.centered-basket {
+  max-width: 900px;      /* or any value suitable to your layout */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2rem;
+}
+
 
 
 footer {
